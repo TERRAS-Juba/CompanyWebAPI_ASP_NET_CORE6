@@ -1,0 +1,629 @@
+2022-08-22 18:57:43.7454|0|DEBUG|Program|init main 
+2022-08-22 18:57:43.8932|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-22 18:57:43.9304|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-22 18:57:44.0183|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-22 18:57:44.0845|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-22 18:57:44.0887|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCR" received FIN. 
+2022-08-22 18:57:44.0977|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCR" accepted. 
+2022-08-22 18:57:44.0977|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCR" started. 
+2022-08-22 18:57:44.1030|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-22 18:57:44.1032|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-22 18:57:44.1032|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-22 18:57:44.1032|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-22 18:57:44.1032|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-22 18:57:44.1032|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-22 18:57:44.1135|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 18:57:44.1339|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCR" stopped. 
+2022-08-22 18:57:44.1366|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCR" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 18:57:44.3484|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCS" accepted. 
+2022-08-22 18:57:44.3484|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCS" started. 
+2022-08-22 18:57:44.3786|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCS" received FIN. 
+2022-08-22 18:57:44.3792|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCT" accepted. 
+2022-08-22 18:57:44.3792|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCT" started. 
+2022-08-22 18:57:44.3792|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 18:57:44.3792|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCS" stopped. 
+2022-08-22 18:57:44.3831|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCS" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 18:57:44.3831|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCT" received FIN. 
+2022-08-22 18:57:44.3831|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCU" accepted. 
+2022-08-22 18:57:44.3831|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCU" started. 
+2022-08-22 18:57:44.3917|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 18:57:44.3917|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCT" stopped. 
+2022-08-22 18:57:44.3917|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCT" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 18:57:44.4064|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK4BTNBMTCU established using the following protocol: Tls13 
+2022-08-22 18:57:44.4671|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-22 18:57:44.4680|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-22 18:57:44.5180|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 52.8594ms 
+2022-08-22 18:57:44.5459|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-22 18:57:44.6259|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 79.9702ms 
+2022-08-22 18:57:44.6645|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-22 18:57:44.6717|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-22 18:57:44.6717|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-22 18:57:44.6767|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-22 18:57:44.6859|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 21.3175ms 
+2022-08-22 18:57:44.6859|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-22 18:57:44.6859|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 14.3347ms 
+2022-08-22 18:57:44.6885|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-22 18:57:44.6885|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 17.0190ms 
+2022-08-22 18:57:45.0018|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-22 18:57:45.1430|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 141.1901ms 
+2022-08-22 18:58:04.3635|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-22 18:58:04.3721|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-22 18:58:04.4148|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4BTNBMTCU" is closing. 
+2022-08-22 18:58:04.4279|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4BTNBMTCU" is closed. The last processed stream ID was 11. 
+2022-08-22 18:58:04.4279|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCU" received FIN. 
+2022-08-22 18:58:04.4279|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4BTNBMTCU" sending FIN because: "The client closed the connection." 
+2022-08-22 18:58:04.4352|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4BTNBMTCU" stopped. 
+2022-08-22 18:58:04.4504|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-22 19:29:41.7221|0|DEBUG|Program|init main 
+2022-08-22 19:29:41.9835|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-22 19:29:42.0284|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-22 19:29:42.1430|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-22 19:29:42.2164|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-22 19:29:42.2304|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-22 19:29:42.2304|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-22 19:29:42.2304|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-22 19:29:42.2324|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-22 19:29:42.2324|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-22 19:29:42.2324|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-22 19:29:42.5713|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLH" received FIN. 
+2022-08-22 19:29:42.5801|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLH" accepted. 
+2022-08-22 19:29:42.5801|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLH" started. 
+2022-08-22 19:29:42.5993|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 19:29:42.6228|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLH" stopped. 
+2022-08-22 19:29:42.6261|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLH" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 19:29:42.8625|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLI" accepted. 
+2022-08-22 19:29:42.8625|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLI" started. 
+2022-08-22 19:29:42.8949|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLJ" accepted. 
+2022-08-22 19:29:42.8949|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLI" received FIN. 
+2022-08-22 19:29:42.8952|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLJ" started. 
+2022-08-22 19:29:42.8994|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLJ" received FIN. 
+2022-08-22 19:29:42.8994|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLK" accepted. 
+2022-08-22 19:29:42.8994|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLK" started. 
+2022-08-22 19:29:42.9061|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 19:29:42.9061|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 19:29:42.9061|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLJ" stopped. 
+2022-08-22 19:29:42.9061|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLI" stopped. 
+2022-08-22 19:29:42.9061|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLJ" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 19:29:42.9071|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLI" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 19:29:42.9234|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK4CFJ3PBLK established using the following protocol: Tls13 
+2022-08-22 19:29:42.9918|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-22 19:29:42.9918|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-22 19:29:43.0480|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 59.6543ms 
+2022-08-22 19:29:43.0480|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-22 19:29:43.1429|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 93.0848ms 
+2022-08-22 19:29:43.1716|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-22 19:29:43.1716|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-22 19:29:43.1716|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-22 19:29:43.2246|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-22 19:29:43.2246|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-22 19:29:43.2246|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-22 19:29:43.2311|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 58.0967ms 
+2022-08-22 19:29:43.2311|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 57.9838ms 
+2022-08-22 19:29:43.2311|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 59.5096ms 
+2022-08-22 19:29:43.5605|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-22 19:29:43.7421|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.6424ms 
+2022-08-22 19:29:49.4139|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-22 19:29:49.4179|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-22 19:29:49.4483|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4CFJ3PBLK" is closing. 
+2022-08-22 19:29:49.4533|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4CFJ3PBLK" is closed. The last processed stream ID was 11. 
+2022-08-22 19:29:49.4533|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLK" received FIN. 
+2022-08-22 19:29:49.4533|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4CFJ3PBLK" sending FIN because: "The client closed the connection." 
+2022-08-22 19:29:49.4559|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4CFJ3PBLK" stopped. 
+2022-08-22 19:29:49.4601|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-22 19:36:14.9595|0|DEBUG|Program|init main 
+2022-08-22 19:36:15.2047|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-22 19:36:15.8606|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: None 
+2022-08-22 19:36:15.8775|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-22 19:40:28.5158|0|DEBUG|Program|init main 
+2022-08-22 19:40:28.7675|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-22 19:40:29.4318|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-22 19:40:29.6037|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-22 19:41:12.4089|0|DEBUG|Program|init main 
+2022-08-22 19:41:12.6686|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-22 19:41:13.3560|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-22 19:41:13.3727|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-22 19:41:13.3897|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (14ms). 
+2022-08-22 19:41:13.3922|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'MyCompany' on server ''. 
+2022-08-22 19:41:13.3985|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:13.5381|20004|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:13.5381|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:13.5450|20004|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:13.5617|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-22 19:41:13.5617|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-22 19:41:13.5617|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'postgres' on server ''. 
+2022-08-22 19:41:13.6362|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'postgres' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:13.6419|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:41:13.6458|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (4ms). 
+2022-08-22 19:41:13.6458|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (7ms). 
+2022-08-22 19:41:13.6506|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE DATABASE "MyCompany"; 
+2022-08-22 19:41:14.1109|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (451ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE DATABASE "MyCompany"; 
+2022-08-22 19:41:14.1176|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'postgres' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.1315|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'postgres' on server '' (8ms). 
+2022-08-22 19:41:14.1315|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'postgres' on server ''. 
+2022-08-22 19:41:14.1315|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'postgres' on server '' (0ms). 
+2022-08-22 19:41:14.1352|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.1513|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.1513|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.1513|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:41:14.2300|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:41:14.2300|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.2300|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.2300|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.2458|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2458|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+); 
+2022-08-22 19:41:14.2540|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" character varying(150) NOT NULL,
+    "ProductVersion" character varying(32) NOT NULL,
+    CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+); 
+2022-08-22 19:41:14.2540|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2587|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (4ms). 
+2022-08-22 19:41:14.2614|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.2709|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2709|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2712|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:41:14.2712|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-08-22 19:41:14.2712|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2022-08-22 19:41:14.2712|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (0ms). 
+2022-08-22 19:41:14.2712|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.2712|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2712|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory'); 
+2022-08-22 19:41:14.2915|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory'); 
+2022-08-22 19:41:14.2915|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2915|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:41:14.2915|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-22 19:41:14.2915|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-22 19:41:14.2915|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-22 19:41:14.2915|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.2915|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2915|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId"; 
+2022-08-22 19:41:14.2915|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId"; 
+2022-08-22 19:41:14.2959|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2959|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results. 
+2022-08-22 19:41:14.2959|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.2959|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:41:14.3089|20402|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20220822174029_DatabaseCreation'. 
+2022-08-22 19:41:14.3329|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.3329|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.3329|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2022-08-22 19:41:14.3382|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2022-08-22 19:41:14.3382|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:41:14.3382|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3382|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3382|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Companies" (
+    "CompanyId" uuid NOT NULL,
+    "Name" character varying(60) NOT NULL,
+    "Adress" character varying(60) NOT NULL,
+    "Country" text NOT NULL,
+    CONSTRAINT "PK_Companies" PRIMARY KEY ("CompanyId")
+); 
+2022-08-22 19:41:14.3488|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Companies" (
+    "CompanyId" uuid NOT NULL,
+    "Name" character varying(60) NOT NULL,
+    "Adress" character varying(60) NOT NULL,
+    "Country" text NOT NULL,
+    CONSTRAINT "PK_Companies" PRIMARY KEY ("CompanyId")
+); 
+2022-08-22 19:41:14.3488|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:41:14.3488|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3488|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3488|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "EmployeeId" uuid NOT NULL,
+    "Name" character varying(30) NOT NULL,
+    "Age" integer NOT NULL,
+    "Position" character varying(20) NOT NULL,
+    "CompanyId" uuid NOT NULL,
+    CONSTRAINT "PK_Employees" PRIMARY KEY ("EmployeeId"),
+    CONSTRAINT "FK_Employees_Companies_CompanyId" FOREIGN KEY ("CompanyId") REFERENCES "Companies" ("CompanyId") ON DELETE CASCADE
+); 
+2022-08-22 19:41:14.3557|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Employees" (
+    "EmployeeId" uuid NOT NULL,
+    "Name" character varying(30) NOT NULL,
+    "Age" integer NOT NULL,
+    "Position" character varying(20) NOT NULL,
+    "CompanyId" uuid NOT NULL,
+    CONSTRAINT "PK_Employees" PRIMARY KEY ("EmployeeId"),
+    CONSTRAINT "FK_Employees_Companies_CompanyId" FOREIGN KEY ("CompanyId") REFERENCES "Companies" ("CompanyId") ON DELETE CASCADE
+); 
+2022-08-22 19:41:14.3557|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:41:14.3557|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3557|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3557|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Employees_CompanyId" ON "Employees" ("CompanyId"); 
+2022-08-22 19:41:14.3593|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Employees_CompanyId" ON "Employees" ("CompanyId"); 
+2022-08-22 19:41:14.3593|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:41:14.3593|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3593|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:41:14.3593|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220822174029_DatabaseCreation', '7.0.0-preview.7.22376.2'); 
+2022-08-22 19:41:14.3593|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220822174029_DatabaseCreation', '7.0.0-preview.7.22376.2'); 
+2022-08-22 19:41:14.3593|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2022-08-22 19:41:14.3666|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2022-08-22 19:41:14.3681|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2022-08-22 19:41:14.3681|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:41:14.3681|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:41:14.3681|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-22 19:41:14.3681|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-22 19:41:14.3681|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:57:31.3299|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-22 19:57:32.0768|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-22 19:57:32.2994|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-22 19:57:39.7256|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-22 19:57:40.4303|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-22 19:57:40.4490|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-22 19:57:40.4664|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (15ms). 
+2022-08-22 19:57:40.4689|20400|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.4754|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.6595|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.6595|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.6692|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (5ms). 
+2022-08-22 19:57:40.6759|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-08-22 19:57:40.6799|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (4ms). 
+2022-08-22 19:57:40.6799|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (7ms). 
+2022-08-22 19:57:40.6799|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.6966|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7010|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory'); 
+2022-08-22 19:57:40.7708|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory'); 
+2022-08-22 19:57:40.7724|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7724|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (1ms). 
+2022-08-22 19:57:40.7724|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.7806|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7806|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7806|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:57:40.7806|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2022-08-22 19:57:40.7806|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2022-08-22 19:57:40.7806|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (0ms). 
+2022-08-22 19:57:40.7806|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.7806|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7806|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory'); 
+2022-08-22 19:57:40.7806|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory'); 
+2022-08-22 19:57:40.7806|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7806|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:57:40.7960|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-22 19:57:40.7960|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-22 19:57:40.7960|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-22 19:57:40.7960|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.7960|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.7960|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId"; 
+2022-08-22 19:57:40.7960|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId"; 
+2022-08-22 19:57:40.8020|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.8048|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 6ms reading results. 
+2022-08-22 19:57:40.8048|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.8048|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:57:40.8151|20402|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20220822175732_InitialData'. 
+2022-08-22 19:57:40.8527|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.8527|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.8527|20209|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2022-08-22 19:57:40.8578|20200|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2022-08-22 19:57:40.8578|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:57:40.8578|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8578|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8594|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE "Companies" RENAME COLUMN "Adress" TO "Address"; 
+2022-08-22 19:57:40.8594|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE "Companies" RENAME COLUMN "Adress" TO "Address"; 
+2022-08-22 19:57:40.8594|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:57:40.8594|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8594|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8594|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Companies" ("CompanyId", "Address", "Country", "Name")
+VALUES ('3d490a70-94ce-4d15-9494-5248280c2ce3', '312 Forest Avenue, BF 923', 'USA', 'Admin_Solutions Ltd');
+INSERT INTO "Companies" ("CompanyId", "Address", "Country", "Name")
+VALUES ('c9d4c053-49b6-410c-bc78-2d54a9991870', '583 Wall Dr. Gwynn Oak, MD 21207', 'USA', 'IT_Solutions Ltd'); 
+2022-08-22 19:57:40.8646|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Companies" ("CompanyId", "Address", "Country", "Name")
+VALUES ('3d490a70-94ce-4d15-9494-5248280c2ce3', '312 Forest Avenue, BF 923', 'USA', 'Admin_Solutions Ltd');
+INSERT INTO "Companies" ("CompanyId", "Address", "Country", "Name")
+VALUES ('c9d4c053-49b6-410c-bc78-2d54a9991870', '583 Wall Dr. Gwynn Oak, MD 21207', 'USA', 'IT_Solutions Ltd'); 
+2022-08-22 19:57:40.8646|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:57:40.8646|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8646|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8646|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Employees" ("EmployeeId", "Age", "CompanyId", "Name", "Position")
+VALUES ('021ca3c1-0deb-4afd-ae94-2159a8479811', 35, '3d490a70-94ce-4d15-9494-5248280c2ce3', 'Kane Miller', 'Administrator');
+INSERT INTO "Employees" ("EmployeeId", "Age", "CompanyId", "Name", "Position")
+VALUES ('80abbca8-664d-4b20-b5de-024705497d4a', 26, 'c9d4c053-49b6-410c-bc78-2d54a9991870', 'Sam Raiden', 'Software developer');
+INSERT INTO "Employees" ("EmployeeId", "Age", "CompanyId", "Name", "Position")
+VALUES ('86dba8c0-d178-41e7-938c-ed49778fb52a', 30, 'c9d4c053-49b6-410c-bc78-2d54a9991870', 'Jana McLeaf', 'UX Designer'); 
+2022-08-22 19:57:40.8646|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Employees" ("EmployeeId", "Age", "CompanyId", "Name", "Position")
+VALUES ('021ca3c1-0deb-4afd-ae94-2159a8479811', 35, '3d490a70-94ce-4d15-9494-5248280c2ce3', 'Kane Miller', 'Administrator');
+INSERT INTO "Employees" ("EmployeeId", "Age", "CompanyId", "Name", "Position")
+VALUES ('80abbca8-664d-4b20-b5de-024705497d4a', 26, 'c9d4c053-49b6-410c-bc78-2d54a9991870', 'Sam Raiden', 'Software developer');
+INSERT INTO "Employees" ("EmployeeId", "Age", "CompanyId", "Name", "Position")
+VALUES ('86dba8c0-d178-41e7-938c-ed49778fb52a', 30, 'c9d4c053-49b6-410c-bc78-2d54a9991870', 'Jana McLeaf', 'UX Designer'); 
+2022-08-22 19:57:40.8646|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2022-08-22 19:57:40.8646|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8646|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2022-08-22 19:57:40.8646|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220822175732_InitialData', '7.0.0-preview.7.22376.2'); 
+2022-08-22 19:57:40.8646|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20220822175732_InitialData', '7.0.0-preview.7.22376.2'); 
+2022-08-22 19:57:40.8674|20210|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2022-08-22 19:57:40.8674|20202|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2022-08-22 19:57:40.8714|20204|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2022-08-22 19:57:40.8714|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-22 19:57:40.8714|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 19:57:40.8714|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-22 19:57:40.8714|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-22 19:57:40.8714|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-22 21:03:34.8433|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-22 21:03:34.9149|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-22 21:03:35.0089|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-22 21:03:35.0843|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-22 21:03:35.0985|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-22 21:03:35.0985|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-22 21:03:35.0985|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-22 21:03:35.0985|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-22 21:03:35.0985|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-22 21:03:35.0985|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-22 21:03:35.3284|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVG" received FIN. 
+2022-08-22 21:03:35.3388|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVG" accepted. 
+2022-08-22 21:03:35.3388|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVG" started. 
+2022-08-22 21:03:35.3529|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 21:03:35.3728|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVG" stopped. 
+2022-08-22 21:03:35.3768|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVG" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 21:03:35.6024|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVH" accepted. 
+2022-08-22 21:03:35.6024|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVH" started. 
+2022-08-22 21:03:35.6304|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVH" received FIN. 
+2022-08-22 21:03:35.6304|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVI" accepted. 
+2022-08-22 21:03:35.6304|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVI" started. 
+2022-08-22 21:03:35.6335|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 21:03:35.6335|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVH" stopped. 
+2022-08-22 21:03:35.6335|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVH" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 21:03:35.6335|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVI" received FIN. 
+2022-08-22 21:03:35.6335|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVJ" accepted. 
+2022-08-22 21:03:35.6370|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVJ" started. 
+2022-08-22 21:03:35.6441|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 21:03:35.6441|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVI" stopped. 
+2022-08-22 21:03:35.6441|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVI" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 21:03:35.6582|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK4E41PUCVJ established using the following protocol: Tls13 
+2022-08-22 21:03:35.7266|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-22 21:03:35.7266|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-22 21:03:35.7745|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 50.3856ms 
+2022-08-22 21:03:35.7815|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-22 21:03:35.8892|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 107.5547ms 
+2022-08-22 21:03:35.9194|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-22 21:03:35.9262|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-22 21:03:35.9262|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-22 21:03:35.9365|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-22 21:03:35.9365|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-22 21:03:35.9371|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 10.8700ms 
+2022-08-22 21:03:35.9371|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 17.8408ms 
+2022-08-22 21:03:35.9611|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-22 21:03:35.9676|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 41.3637ms 
+2022-08-22 21:03:36.3763|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-22 21:03:36.5147|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 138.3787ms 
+2022-08-22 21:03:49.1818|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-22 21:03:49.1818|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 1.5809ms 
+2022-08-22 21:03:49.3741|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-22 21:03:49.3741|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.3765ms 
+2022-08-22 21:03:49.3815|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - 
+2022-08-22 21:03:49.3815|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2022-08-22 21:03:49.3815|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - - 200 628 image/png 0.7209ms 
+2022-08-22 21:03:53.6071|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/WeatherForecast - - 
+2022-08-22 21:03:53.6071|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-22 21:03:53.6071|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /WeatherForecast does not match a supported file type 
+2022-08-22 21:03:53.6440|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2022-08-22 21:03:53.6497|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2022-08-22 21:03:53.6497|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' 
+2022-08-22 21:03:53.6536|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' 
+2022-08-22 21:03:53.6774|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees). 
+2022-08-22 21:03:53.6774|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-22 21:03:53.6774|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-22 21:03:53.6774|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-22 21:03:53.6774|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-22 21:03:53.6774|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-22 21:03:53.6774|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees) 
+2022-08-22 21:03:53.6774|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees) 
+2022-08-22 21:03:53.6853|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-08-22 21:03:53.6905|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'. 
+2022-08-22 21:03:53.6905|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2022-08-22 21:03:53.6905|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-22 21:03:53.6905|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-22 21:03:53.6905|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-22 21:03:53.6905|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'. 
+2022-08-22 21:03:53.7088|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 24.5295ms 
+2022-08-22 21:03:53.7088|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' 
+2022-08-22 21:03:53.7090|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 101.9783ms 
+2022-08-22 21:03:59.0325|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-22 21:03:59.0387|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-22 21:03:59.0808|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4E41PUCVJ" is closing. 
+2022-08-22 21:03:59.0894|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4E41PUCVJ" is closed. The last processed stream ID was 19. 
+2022-08-22 21:03:59.0894|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVJ" received FIN. 
+2022-08-22 21:03:59.0894|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E41PUCVJ" sending FIN because: "The client closed the connection." 
+2022-08-22 21:03:59.0894|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E41PUCVJ" stopped. 
+2022-08-22 21:03:59.0998|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-22 21:10:20.2763|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-22 21:10:20.3433|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-22 21:10:20.4355|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-22 21:10:20.5038|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-22 21:10:20.5213|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-22 21:10:20.5213|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-22 21:10:20.5213|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-22 21:10:20.5213|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-22 21:10:20.5250|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-22 21:10:20.5250|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-22 21:10:20.9033|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BL" received FIN. 
+2022-08-22 21:10:20.9112|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BL" accepted. 
+2022-08-22 21:10:20.9112|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BL" started. 
+2022-08-22 21:10:20.9239|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 21:10:20.9414|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BL" stopped. 
+2022-08-22 21:10:20.9414|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BL" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 21:10:21.1486|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BM" accepted. 
+2022-08-22 21:10:21.1486|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BM" started. 
+2022-08-22 21:10:21.1776|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BM" received FIN. 
+2022-08-22 21:10:21.1776|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BN" accepted. 
+2022-08-22 21:10:21.1776|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BN" started. 
+2022-08-22 21:10:21.1812|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 21:10:21.1812|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BM" stopped. 
+2022-08-22 21:10:21.1812|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BN" received FIN. 
+2022-08-22 21:10:21.1812|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BM" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 21:10:21.1812|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BO" accepted. 
+2022-08-22 21:10:21.1812|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BO" started. 
+2022-08-22 21:10:21.1898|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-22 21:10:21.1898|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BN" stopped. 
+2022-08-22 21:10:21.1898|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BN" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-22 21:10:21.2048|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK4E7QLQ1BO established using the following protocol: Tls13 
+2022-08-22 21:10:21.2617|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-22 21:10:21.2617|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-22 21:10:21.3042|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 45.9126ms 
+2022-08-22 21:10:21.3113|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-22 21:10:21.3937|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 82.4132ms 
+2022-08-22 21:10:21.4286|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-22 21:10:21.4359|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-22 21:10:21.4359|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-22 21:10:21.4461|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-22 21:10:21.4461|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-22 21:10:21.4461|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 17.7720ms 
+2022-08-22 21:10:21.4461|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 10.6068ms 
+2022-08-22 21:10:21.4461|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-22 21:10:21.4461|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 10.8264ms 
+2022-08-22 21:10:21.7641|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-22 21:10:21.8965|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.3293ms 
+2022-08-22 21:10:28.0319|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/WeatherForecast - - 
+2022-08-22 21:10:28.0319|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-22 21:10:28.0319|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /WeatherForecast does not match a supported file type 
+2022-08-22 21:10:28.0628|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2022-08-22 21:10:28.0676|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2022-08-22 21:10:28.0676|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' 
+2022-08-22 21:10:28.0713|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' 
+2022-08-22 21:10:28.0929|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[CompanyEmployees.WeatherForecast] Get() on controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees). 
+2022-08-22 21:10:28.0938|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-22 21:10:28.0938|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-22 21:10:28.0938|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-22 21:10:28.0938|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-22 21:10:28.0938|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-22 21:10:28.0938|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees) 
+2022-08-22 21:10:28.2913|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-22 21:10:28.3276|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.WeatherForecastController (CompanyEmployees) 
+2022-08-22 21:10:28.3321|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-08-22 21:10:28.3379|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/plain'. 
+2022-08-22 21:10:28.3379|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2022-08-22 21:10:28.3379|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-22 21:10:28.3379|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-22 21:10:28.3379|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-22 21:10:28.3379|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'CompanyEmployees.WeatherForecast[]'. 
+2022-08-22 21:10:28.3541|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees) in 254.3225ms 
+2022-08-22 21:10:28.3541|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.WeatherForecastController.Get (CompanyEmployees)' 
+2022-08-22 21:10:28.3570|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 325.1234ms 
+2022-08-22 21:12:39.4159|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4E7QLQ1BO" is closing. 
+2022-08-22 21:12:39.4293|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK4E7QLQ1BO" is closed. The last processed stream ID was 13. 
+2022-08-22 21:12:39.4293|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BO" received FIN. 
+2022-08-22 21:12:39.4293|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4E7QLQ1BO" sending FIN because: "The client closed the connection." 
+2022-08-22 21:12:39.4370|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4E7QLQ1BO" stopped. 
+2022-08-22 21:14:06.3579|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-22 21:14:06.3626|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-22 21:14:06.4001|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
