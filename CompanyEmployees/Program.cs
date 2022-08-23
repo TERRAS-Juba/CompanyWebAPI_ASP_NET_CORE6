@@ -1,4 +1,5 @@
 using System.Net;
+using CompanyEmployees.Formatters;
 using Contracts;
 using Entities;
 using Entities.Models;
@@ -10,6 +11,9 @@ using NLog.Web;
 using Npgsql;
 using Repository;
 
+//====================================================================
+//                              Builder
+//====================================================================
 // Logger
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
@@ -23,7 +27,15 @@ builder.Services.AddDbContext<RepositoryContext>(o =>
     o.UseNpgsql(connectionBuilder.ConnectionString, b => b.MigrationsAssembly("CompanyEmployees")));
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(config =>
+    {
+        config.RespectBrowserAcceptHeader = true;
+        config.ReturnHttpNotAcceptable = true;
+    }
+).AddXmlDataContractSerializerFormatters();
+
+// Added new OutputFormater wich is csv
+builder.Services.AddMvc(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
 
 // DI AutoMapper
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -42,6 +54,10 @@ builder.Services.AddSwaggerGen();
 // Cors
 builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy", build => build.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+
+//====================================================================
+//                              App
+//====================================================================
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

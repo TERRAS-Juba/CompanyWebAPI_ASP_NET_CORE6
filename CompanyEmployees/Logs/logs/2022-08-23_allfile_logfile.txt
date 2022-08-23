@@ -4317,3 +4317,1027 @@ LIMIT 2
 2022-08-23 13:40:09.4721|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK4VF27CF4E" sending FIN because: "The client closed the connection." 
 2022-08-23 13:40:09.4765|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK4VF27CF4E" stopped. 
 2022-08-23 13:40:09.4841|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-23 16:05:12.0597|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-23 16:05:12.1976|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-23 16:05:12.3673|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-23 16:05:12.4978|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-23 16:05:12.5194|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-23 16:05:12.5194|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-23 16:05:12.5194|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-23 16:05:12.5194|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-23 16:05:12.5194|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-23 16:05:12.5230|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-23 16:05:12.6150|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACO" received FIN. 
+2022-08-23 16:05:12.6300|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACO" accepted. 
+2022-08-23 16:05:12.6314|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACO" started. 
+2022-08-23 16:05:12.6588|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:05:12.6951|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACO" stopped. 
+2022-08-23 16:05:12.6996|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACO" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:05:14.0276|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACP" accepted. 
+2022-08-23 16:05:14.0276|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACP" started. 
+2022-08-23 16:05:14.1232|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACP" received FIN. 
+2022-08-23 16:05:14.1232|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACQ" accepted. 
+2022-08-23 16:05:14.1232|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACQ" started. 
+2022-08-23 16:05:14.1315|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACQ" received FIN. 
+2022-08-23 16:05:14.1315|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:05:14.1315|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:05:14.1315|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACP" stopped. 
+2022-08-23 16:05:14.1315|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACQ" stopped. 
+2022-08-23 16:05:14.1315|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACP" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:05:14.1315|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACQ" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:05:14.1395|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACR" accepted. 
+2022-08-23 16:05:14.1395|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACR" started. 
+2022-08-23 16:05:14.1452|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACS" accepted. 
+2022-08-23 16:05:14.1452|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:05:14.1452|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACS" started. 
+2022-08-23 16:05:14.1452|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACR" received FIN. 
+2022-08-23 16:05:14.1452|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACR" stopped. 
+2022-08-23 16:05:14.1452|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACR" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:05:14.1504|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:05:14.1504|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACS" stopped. 
+2022-08-23 16:05:14.1510|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACS" received FIN. 
+2022-08-23 16:05:14.1510|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACS" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:05:14.1510|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACT" accepted. 
+2022-08-23 16:05:14.1510|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACT" started. 
+2022-08-23 16:05:14.1820|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK521VIVACT established using the following protocol: Tls13 
+2022-08-23 16:05:14.2966|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-23 16:05:14.2966|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-23 16:05:14.2991|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-23 16:05:14.2991|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-23 16:05:14.4123|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 121.8357ms 
+2022-08-23 16:05:14.5732|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 283.3283ms 
+2022-08-23 16:05:14.6038|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-23 16:05:14.6079|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 4.0846ms 
+2022-08-23 16:05:14.6140|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-23 16:05:14.6185|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-23 16:05:14.6201|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-23 16:05:14.7129|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-23 16:05:14.7129|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-23 16:05:14.7129|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-23 16:05:14.7129|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-23 16:05:14.7178|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-23 16:05:14.7204|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 5.9713ms 
+2022-08-23 16:05:14.7295|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 115.4811ms 
+2022-08-23 16:05:14.7295|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 109.5790ms 
+2022-08-23 16:05:14.7295|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 111.0420ms 
+2022-08-23 16:05:14.7313|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-23 16:05:14.7313|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-23 16:05:14.7430|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-23 16:05:14.7430|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 12.4125ms 
+2022-08-23 16:05:14.7471|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-23 16:05:14.7471|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 17.6255ms 
+2022-08-23 16:05:15.6006|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-23 16:05:15.9605|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 359.8485ms 
+2022-08-23 16:05:15.9650|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-23 16:05:15.9689|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.8416ms 
+2022-08-23 16:05:21.5749|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/Companies - - 
+2022-08-23 16:05:21.5758|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:05:21.5758|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/Companies does not match a supported file type 
+2022-08-23 16:05:21.6313|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Companies' 
+2022-08-23 16:05:21.6382|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/Companies' 
+2022-08-23 16:05:21.6382|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:05:21.6428|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:05:21.6718|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:05:21.6718|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:05:21.6718|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:05:21.6718|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:05:21.6718|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:05:21.6718|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:05:21.6718|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:05:22.0097|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-23 16:05:22.5611|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:05:27.0205|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:05:27.1628|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Company>()
+    .AsNoTracking()
+    .OrderBy(c => c.Name)' 
+2022-08-23 16:05:27.9930|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Company>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Company.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Company.Address (string) Required MaxLength(60), 1], [Property: Company.Country (string) Required, 2], [Property: Company.Name (string) Required MaxLength(60), 3] }
+        SELECT c.CompanyId, c.Address, c.Country, c.Name
+        FROM Companies AS c
+        ORDER BY c.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Company>, 
+    Entities.RepositoryContext, 
+    False, 
+    False, 
+    True
+)' 
+2022-08-23 16:05:28.1041|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:05:28.1041|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:05:28.1792|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (60ms). 
+2022-08-23 16:05:28.2017|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (88ms). 
+2022-08-23 16:05:28.2065|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (107ms). 
+2022-08-23 16:05:28.2166|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:05:28.7116|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:05:28.7359|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:05:28.9124|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (183ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:05:28.9484|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:05:28.9788|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 50ms reading results. 
+2022-08-23 16:05:28.9865|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:05:29.0019|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (14ms). 
+2022-08-23 16:05:29.0583|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-08-23 16:05:29.0641|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-08-23 16:05:29.0641|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-23 16:05:29.0641|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-23 16:05:29.0641|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-23 16:05:29.0641|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:05:29.0986|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 7412.1312ms 
+2022-08-23 16:05:29.0986|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:05:29.1049|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:05:29.1168|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:05:29.1273|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (9ms). 
+2022-08-23 16:05:29.1273|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/Companies - - - 200 - application/json;+charset=utf-8 7553.7088ms 
+2022-08-23 16:06:29.0885|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACU" accepted. 
+2022-08-23 16:06:29.0885|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACU" started. 
+2022-08-23 16:06:29.1002|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK521VIVACU established using the following protocol: Tls13 
+2022-08-23 16:06:29.1002|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:06:29.1002|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:06:29.1002|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:06:29.1002|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:06:29.1002|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:06:29.1002|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:06:29.1002|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:06:29.1002|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:06:29.1032|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:06:29.1660|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:06:29.1704|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:06:29.1704|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:06:29.1704|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:06:29.1704|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:06:29.1704|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:06:29.1704|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:06:29.1704|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:06:29.1714|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:06:29.1714|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:06:29.1714|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:06:29.1714|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:06:29.1714|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:06:29.1714|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:06:29.1714|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-08-23 16:06:29.1714|4|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2022-08-23 16:06:29.1714|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-23 16:06:29.1714|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-23 16:06:29.1714|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-23 16:06:29.1714|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:06:29.1714|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 71.7744ms 
+2022-08-23 16:06:29.1714|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:06:29.1714|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:06:29.1714|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:06:29.1714|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:06:29.1714|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 73.1541ms 
+2022-08-23 16:07:08.2892|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:07:08.2892|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:07:08.2892|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:07:08.2892|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:07:08.2892|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:07:08.2892|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:07:08.2892|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:07:08.2892|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:07:08.2942|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:07:08.3089|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:07:08.3089|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:07:08.3089|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:07:08.3089|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:07:08.3089|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:07:08.3089|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:07:08.3089|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:07:08.3089|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:07:08.3089|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:07:08.3089|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:07:08.3110|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:07:08.3110|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:07:08.3110|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:07:08.3110|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:07:08.3110|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-08-23 16:07:08.3110|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/xml'. 
+2022-08-23 16:07:08.3110|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/xml) 
+2022-08-23 16:07:08.3110|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-23 16:07:08.3110|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-23 16:07:08.3110|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-23 16:07:08.3110|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:07:08.3150|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 24.2873ms 
+2022-08-23 16:07:08.3150|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:07:08.3150|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:07:08.3150|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:07:08.3150|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:07:08.3150|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 26.0161ms 
+2022-08-23 16:07:09.8158|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:07:09.8158|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:07:09.8158|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:07:09.8158|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:07:09.8158|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:07:09.8158|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:07:09.8158|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:07:09.8158|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:07:09.8158|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:07:09.8158|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:07:09.8158|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:07:09.8158|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:07:09.8158|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:07:09.8158|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:07:09.8158|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:07:09.8158|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:07:09.8158|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:07:09.8158|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:07:09.8158|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:07:09.8158|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:07:09.8158|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:07:09.8190|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:07:09.8190|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:07:09.8190|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2022-08-23 16:07:09.8190|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/xml'. 
+2022-08-23 16:07:09.8190|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/xml) 
+2022-08-23 16:07:09.8190|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-23 16:07:09.8190|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-23 16:07:09.8190|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-23 16:07:09.8190|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:07:09.8190|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 3.1758ms 
+2022-08-23 16:07:09.8190|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:07:09.8190|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:07:09.8190|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:07:09.8190|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:07:09.8190|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 3.9836ms 
+2022-08-23 16:07:40.2835|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK521VIVACT" is closing. 
+2022-08-23 16:07:40.2835|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK521VIVACT" is closed. The last processed stream ID was 23. 
+2022-08-23 16:07:40.2835|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACT" received FIN. 
+2022-08-23 16:07:40.2835|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACT" sending FIN because: "The client closed the connection." 
+2022-08-23 16:07:40.2887|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACT" stopped. 
+2022-08-23 16:08:14.6292|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-23 16:08:14.6326|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-23 16:08:14.6427|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK521VIVACU" is closing. 
+2022-08-23 16:08:14.6427|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK521VIVACU" is closed. The last processed stream ID was 5. 
+2022-08-23 16:08:14.6441|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK521VIVACU" stopped. 
+2022-08-23 16:08:14.6441|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK521VIVACU" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:08:14.6538|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-23 16:09:55.5388|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-23 16:09:55.6117|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-23 16:09:55.6995|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-23 16:09:55.7740|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-23 16:09:55.7879|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-23 16:09:55.7879|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-23 16:09:55.7879|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-23 16:09:55.7879|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-23 16:09:55.7879|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-23 16:09:55.7879|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-23 16:09:55.8556|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GK8" received FIN. 
+2022-08-23 16:09:55.8675|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GK8" accepted. 
+2022-08-23 16:09:55.8675|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GK8" started. 
+2022-08-23 16:09:55.8824|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:09:55.9026|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GK8" stopped. 
+2022-08-23 16:09:55.9056|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GK8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:09:56.2028|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GK9" accepted. 
+2022-08-23 16:09:56.2034|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GK9" started. 
+2022-08-23 16:09:56.2426|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GK9" received FIN. 
+2022-08-23 16:09:56.2426|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKA" accepted. 
+2022-08-23 16:09:56.2429|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKA" started. 
+2022-08-23 16:09:56.2429|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GKA" received FIN. 
+2022-08-23 16:09:56.2471|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKB" accepted. 
+2022-08-23 16:09:56.2471|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKB" started. 
+2022-08-23 16:09:56.2555|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:09:56.2555|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:09:56.2555|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GK9" stopped. 
+2022-08-23 16:09:56.2555|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKA" stopped. 
+2022-08-23 16:09:56.2555|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GKA" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:09:56.2555|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GK9" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:09:56.2708|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK524K05GKB established using the following protocol: Tls13 
+2022-08-23 16:09:56.3356|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-23 16:09:56.3356|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-23 16:09:56.3898|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 58.7058ms 
+2022-08-23 16:09:56.4044|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-23 16:09:56.5074|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 102.9226ms 
+2022-08-23 16:09:56.5845|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-23 16:09:56.5845|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-23 16:09:56.5845|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-23 16:09:56.6242|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-23 16:09:56.6423|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 57.7327ms 
+2022-08-23 16:09:56.6462|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-23 16:09:56.6462|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-23 16:09:56.6508|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 66.0209ms 
+2022-08-23 16:09:56.6508|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 66.0814ms 
+2022-08-23 16:09:57.2118|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-23 16:09:57.4031|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 191.3050ms 
+2022-08-23 16:10:04.3254|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKC" accepted. 
+2022-08-23 16:10:04.3254|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKC" started. 
+2022-08-23 16:10:04.3376|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK524K05GKC established using the following protocol: Tls13 
+2022-08-23 16:10:04.3376|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:10:04.3390|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:10:04.3390|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:10:04.3757|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:10:04.3806|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:10:04.3806|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:10:04.3838|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:10:04.4059|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:10:04.4070|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:10:04.4070|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:10:04.4070|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:10:04.4070|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:10:04.4070|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:10:04.4070|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:10:04.6110|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-23 16:10:04.8644|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:10:06.4427|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:10:06.5148|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Company>()
+    .AsNoTracking()
+    .OrderBy(c => c.Name)' 
+2022-08-23 16:10:06.8638|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Company>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Company.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Company.Address (string) Required MaxLength(60), 1], [Property: Company.Country (string) Required, 2], [Property: Company.Name (string) Required MaxLength(60), 3] }
+        SELECT c.CompanyId, c.Address, c.Country, c.Name
+        FROM Companies AS c
+        ORDER BY c.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Company>, 
+    Entities.RepositoryContext, 
+    False, 
+    False, 
+    True
+)' 
+2022-08-23 16:10:06.9156|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:10:06.9156|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:10:06.9526|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (28ms). 
+2022-08-23 16:10:06.9629|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (44ms). 
+2022-08-23 16:10:06.9656|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (52ms). 
+2022-08-23 16:10:06.9707|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:10:07.2071|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:10:07.2205|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:10:07.3153|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:10:07.3354|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:10:07.3532|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 28ms reading results. 
+2022-08-23 16:10:07.3578|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:10:07.3665|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (8ms). 
+2022-08-23 16:10:07.4002|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter 
+2022-08-23 16:10:07.4056|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/xml'. 
+2022-08-23 16:10:07.4109|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'text/xml' to write the response. 
+2022-08-23 16:10:07.4113|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:10:07.4309|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 3016.8566ms 
+2022-08-23 16:10:07.4310|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:10:07.4310|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:10:07.4387|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:10:07.4430|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (4ms). 
+2022-08-23 16:10:07.4430|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 488 text/xml;+charset=utf-8 3105.1071ms 
+2022-08-23 16:11:05.2372|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:11:05.2372|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:11:05.2372|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:11:05.2372|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:11:05.2372|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:11:05.2372|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:11:05.2372|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:11:05.2372|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:11:05.2372|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:11:05.3168|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:11:05.3205|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:11:05.3205|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:11:05.3205|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:11:05.3205|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:11:05.3205|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:11:05.3205|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:11:05.3205|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:11:05.3205|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:11:05.3205|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:11:05.3205|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:11:05.3205|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:11:05.3205|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:11:05.3205|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:11:05.3205|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter 
+2022-08-23 16:11:05.3205|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/csv'. 
+2022-08-23 16:11:05.3205|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/csv) 
+2022-08-23 16:11:05.3231|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-23 16:11:05.3231|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-23 16:11:05.3231|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-23 16:11:05.3231|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:11:05.3327|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 94.4129ms 
+2022-08-23 16:11:05.3327|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:11:05.3327|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:11:05.3327|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:11:05.3327|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:11:05.3327|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 95.9992ms 
+2022-08-23 16:11:07.0034|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:11:07.0034|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:11:07.0034|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:11:07.0034|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:11:07.0034|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:11:07.0034|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:11:07.0034|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:11:07.0034|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:11:07.0086|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:11:07.0235|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:11:07.0235|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:11:07.0235|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:11:07.0235|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:11:07.0235|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:11:07.0235|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:11:07.0235|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:11:07.0235|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:11:07.0235|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:11:07.0235|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:11:07.0235|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:11:07.0235|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:11:07.0235|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:11:07.0235|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:11:07.0235|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter 
+2022-08-23 16:11:07.0235|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/csv'. 
+2022-08-23 16:11:07.0235|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/csv) 
+2022-08-23 16:11:07.0235|8|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2022-08-23 16:11:07.0235|10|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2022-08-23 16:11:07.0235|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-23 16:11:07.0235|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:11:07.0235|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 22.0951ms 
+2022-08-23 16:11:07.0235|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:11:07.0235|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:11:07.0235|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:11:07.0270|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:11:07.0270|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 23.5997ms 
+2022-08-23 16:12:08.6767|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK524K05GKB" is closing. 
+2022-08-23 16:12:08.6767|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK524K05GKB" is closed. The last processed stream ID was 11. 
+2022-08-23 16:12:08.6767|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GKB" received FIN. 
+2022-08-23 16:12:08.6767|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GKB" sending FIN because: "The client closed the connection." 
+2022-08-23 16:12:08.6767|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKB" stopped. 
+2022-08-23 16:13:04.0714|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-23 16:13:04.0786|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-23 16:13:04.1059|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK524K05GKC" is closing. 
+2022-08-23 16:13:04.1059|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK524K05GKC" is closed. The last processed stream ID was 5. 
+2022-08-23 16:13:04.1106|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK524K05GKC" stopped. 
+2022-08-23 16:13:04.1106|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK524K05GKC" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:13:04.1254|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-23 16:13:09.7130|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-23 16:13:09.8464|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-23 16:13:10.0272|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-23 16:13:10.1534|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-23 16:13:10.1744|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-23 16:13:10.1744|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-23 16:13:10.1754|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-23 16:13:10.1754|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-23 16:13:10.1754|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-23 16:13:10.1754|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-23 16:13:10.3631|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENJ" received FIN. 
+2022-08-23 16:13:10.3769|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENJ" accepted. 
+2022-08-23 16:13:10.3769|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENJ" started. 
+2022-08-23 16:13:10.4057|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:13:10.4439|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENJ" stopped. 
+2022-08-23 16:13:10.4489|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENJ" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:13:10.8074|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENK" accepted. 
+2022-08-23 16:13:10.8074|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENK" started. 
+2022-08-23 16:13:10.8605|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENK" received FIN. 
+2022-08-23 16:13:10.8605|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENL" accepted. 
+2022-08-23 16:13:10.8605|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENL" started. 
+2022-08-23 16:13:10.8686|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:13:10.8686|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENK" stopped. 
+2022-08-23 16:13:10.8686|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENK" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:13:10.8686|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENL" received FIN. 
+2022-08-23 16:13:10.8717|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENM" accepted. 
+2022-08-23 16:13:10.8717|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENM" started. 
+2022-08-23 16:13:10.8844|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:13:10.8844|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENL" stopped. 
+2022-08-23 16:13:10.8844|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENL" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:13:10.9172|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK526DV4ENM established using the following protocol: Tls13 
+2022-08-23 16:13:11.0264|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-23 16:13:11.0278|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-23 16:13:11.0983|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 76.9363ms 
+2022-08-23 16:13:11.1107|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-23 16:13:11.2697|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 158.8603ms 
+2022-08-23 16:13:11.3428|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-23 16:13:11.3430|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-23 16:13:11.3475|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-23 16:13:11.3729|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-23 16:13:11.3920|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-23 16:13:11.3920|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 44.5838ms 
+2022-08-23 16:13:11.3920|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 49.5817ms 
+2022-08-23 16:13:11.4270|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-23 16:13:11.4398|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 96.7327ms 
+2022-08-23 16:13:12.0248|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-23 16:13:12.2678|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.9482ms 
+2022-08-23 16:13:17.1937|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENN" accepted. 
+2022-08-23 16:13:17.1937|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENN" started. 
+2022-08-23 16:13:17.2051|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK526DV4ENN established using the following protocol: Tls13 
+2022-08-23 16:13:17.2051|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:13:17.2051|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:13:17.2051|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:13:17.2415|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:13:17.2475|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:13:17.2475|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:17.2475|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:17.2713|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:13:17.2713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:13:17.2713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:13:17.2713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:13:17.2713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:13:17.2713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:13:17.2713|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:13:17.4744|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-23 16:13:17.7307|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:13:19.3187|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:13:19.3953|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Company>()
+    .AsNoTracking()
+    .OrderBy(c => c.Name)' 
+2022-08-23 16:13:19.8469|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Company>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Company.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Company.Address (string) Required MaxLength(60), 1], [Property: Company.Country (string) Required, 2], [Property: Company.Name (string) Required MaxLength(60), 3] }
+        SELECT c.CompanyId, c.Address, c.Country, c.Name
+        FROM Companies AS c
+        ORDER BY c.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Company>, 
+    Entities.RepositoryContext, 
+    False, 
+    False, 
+    True
+)' 
+2022-08-23 16:13:19.9189|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:13:19.9224|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:13:19.9741|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (45ms). 
+2022-08-23 16:13:19.9898|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (65ms). 
+2022-08-23 16:13:19.9940|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (78ms). 
+2022-08-23 16:13:20.0014|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:13:20.3465|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:20.3675|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:13:20.5277|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (162ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:13:20.5611|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:20.5905|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 47ms reading results. 
+2022-08-23 16:13:20.5986|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:20.6126|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (14ms). 
+2022-08-23 16:13:20.6655|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter 
+2022-08-23 16:13:20.6741|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/csv'. 
+2022-08-23 16:13:20.6817|5|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Could not find an output formatter based on content negotiation. Accepted types were (text/csv) 
+2022-08-23 16:13:20.6834|1|WARN|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|No output formatter was found for content types 'text/csv' to write the response. 
+2022-08-23 16:13:20.7147|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 3433.1463ms 
+2022-08-23 16:13:20.7147|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:20.7190|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:13:20.7274|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:13:20.7347|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (7ms). 
+2022-08-23 16:13:20.7354|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 406 0 - 3529.6963ms 
+2022-08-23 16:13:27.9004|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:13:27.9004|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:13:27.9004|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:13:27.9004|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:13:27.9004|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:27.9004|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:27.9004|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:13:27.9004|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:13:27.9031|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:13:27.9686|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:13:27.9726|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:13:27.9726|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:13:27.9726|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:13:27.9726|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:13:27.9726|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:13:27.9726|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:13:27.9726|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:27.9726|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:13:27.9726|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:13:27.9726|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:27.9726|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:13:27.9726|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:27.9726|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:13:27.9756|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter 
+2022-08-23 16:13:27.9756|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/json'. 
+2022-08-23 16:13:27.9756|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'text/json' to write the response. 
+2022-08-23 16:13:27.9756|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:13:27.9864|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 84.0784ms 
+2022-08-23 16:13:27.9864|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:27.9864|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:13:27.9864|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:13:27.9864|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:13:27.9864|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - text/json;+charset=utf-8 86.3413ms 
+2022-08-23 16:13:33.9909|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:13:33.9911|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:13:33.9911|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:13:33.9911|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:13:33.9911|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:33.9911|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:33.9911|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:13:33.9911|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:13:33.9959|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:13:34.0111|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:13:34.0111|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:13:34.0111|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:13:34.0111|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:13:34.0111|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:13:34.0111|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:13:34.0111|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:13:34.0111|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:34.0111|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:13:34.0111|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:13:34.0111|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:34.0111|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:13:34.0111|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:13:34.0111|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:13:34.0111|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter 
+2022-08-23 16:13:34.0111|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/xml'. 
+2022-08-23 16:13:34.0111|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'text/xml' to write the response. 
+2022-08-23 16:13:34.0111|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:13:34.0276|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 35.6245ms 
+2022-08-23 16:13:34.0276|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:13:34.0276|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:13:34.0276|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:13:34.0276|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:13:34.0276|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 488 text/xml;+charset=utf-8 37.0366ms 
+2022-08-23 16:15:23.9525|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK526DV4ENM" is closing. 
+2022-08-23 16:15:23.9525|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK526DV4ENM" is closed. The last processed stream ID was 11. 
+2022-08-23 16:15:23.9525|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENM" received FIN. 
+2022-08-23 16:15:23.9525|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENM" sending FIN because: "The client closed the connection." 
+2022-08-23 16:15:23.9558|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENM" stopped. 
+2022-08-23 16:15:45.9566|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK526DV4ENN" is closing. 
+2022-08-23 16:15:45.9566|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK526DV4ENN" is closed. The last processed stream ID was 5. 
+2022-08-23 16:15:45.9600|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK526DV4ENN" stopped. 
+2022-08-23 16:15:45.9600|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK526DV4ENN" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:16:05.6524|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-23 16:16:05.6573|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-23 16:16:05.6836|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-23 16:28:29.0417|4|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. 
+2022-08-23 16:28:29.1106|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-23 16:28:29.1234|62|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/home/juba/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2022-08-23 16:28:29.1540|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-23 16:28:29.1604|53|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Repository contains no viable default key. Caller should generate a key with immediate activation. 
+2022-08-23 16:28:29.1604|57|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Policy resolution states that a new key should be added to the key ring. 
+2022-08-23 16:28:29.1647|58|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {324ff622-563d-43ca-86a6-5ce1ff67b55b} with creation date 2022-08-23 14:28:29Z, activation date 2022-08-23 14:28:29Z, and expiration date 2022-11-21 14:28:29Z. 
+2022-08-23 16:28:29.1744|32|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Descriptor deserializer type for key {324ff622-563d-43ca-86a6-5ce1ff67b55b} is 'Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. 
+2022-08-23 16:28:29.1790|34|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No key escrow sink found. Not writing key {324ff622-563d-43ca-86a6-5ce1ff67b55b} to escrow. 
+2022-08-23 16:28:29.1790|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {324ff622-563d-43ca-86a6-5ce1ff67b55b} may be persisted to storage in unencrypted form. 
+2022-08-23 16:28:29.1876|39|INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file '/home/juba/.aspnet/DataProtection-Keys/key-324ff622-563d-43ca-86a6-5ce1ff67b55b.xml'. 
+2022-08-23 16:28:29.1876|23|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Key cache expiration token triggered by 'CreateNewKey' operation. 
+2022-08-23 16:28:29.1876|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file '/home/juba/.aspnet/DataProtection-Keys/key-324ff622-563d-43ca-86a6-5ce1ff67b55b.xml'. 
+2022-08-23 16:28:29.1876|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {324ff622-563d-43ca-86a6-5ce1ff67b55b}. 
+2022-08-23 16:28:29.1926|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {324ff622-563d-43ca-86a6-5ce1ff67b55b} with expiration date 2022-11-21 14:28:29Z as default key. 
+2022-08-23 16:28:29.1954|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-23 16:28:29.1954|11|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory|Using managed symmetric algorithm 'System.Security.Cryptography.Aes'. 
+2022-08-23 16:28:29.1954|10|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory|Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'. 
+2022-08-23 16:28:29.2017|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {324ff622-563d-43ca-86a6-5ce1ff67b55b} as the default key. 
+2022-08-23 16:28:29.2017|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {324ff622-563d-43ca-86a6-5ce1ff67b55b} was loaded during application startup. 
+2022-08-23 16:28:29.2968|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-23 16:28:29.3825|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-23 16:28:29.3971|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-23 16:28:29.3971|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-23 16:28:29.3971|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-23 16:28:29.3971|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-23 16:28:29.3971|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-23 16:28:29.3971|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-23 16:28:29.8436|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS5" received FIN. 
+2022-08-23 16:28:29.8668|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS5" accepted. 
+2022-08-23 16:28:29.8677|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS5" started. 
+2022-08-23 16:28:29.8794|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:28:29.8964|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS5" stopped. 
+2022-08-23 16:28:29.8993|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS5" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:28:30.1125|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS6" accepted. 
+2022-08-23 16:28:30.1125|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS6" started. 
+2022-08-23 16:28:30.1403|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS6" received FIN. 
+2022-08-23 16:28:30.1403|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS7" accepted. 
+2022-08-23 16:28:30.1403|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS7" started. 
+2022-08-23 16:28:30.1456|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS7" received FIN. 
+2022-08-23 16:28:30.1456|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS8" accepted. 
+2022-08-23 16:28:30.1456|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS8" started. 
+2022-08-23 16:28:30.1561|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:28:30.1561|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS6" stopped. 
+2022-08-23 16:28:30.1561|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS6" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:28:30.1561|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-23 16:28:30.1561|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS7" stopped. 
+2022-08-23 16:28:30.1561|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS7" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:28:30.1715|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK52EVVVIS8 established using the following protocol: Tls13 
+2022-08-23 16:28:30.2291|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger - - 
+2022-08-23 16:28:30.2291|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-23 16:28:30.2847|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 59.0274ms 
+2022-08-23 16:28:30.2911|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-23 16:28:30.3806|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 89.4813ms 
+2022-08-23 16:28:30.4143|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-23 16:28:30.4143|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-23 16:28:30.4143|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-23 16:28:30.4661|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-23 16:28:30.4661|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-23 16:28:30.4661|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-23 16:28:30.4723|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 57.7075ms 
+2022-08-23 16:28:30.4723|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 57.9753ms 
+2022-08-23 16:28:30.4723|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 58.0436ms 
+2022-08-23 16:28:31.2625|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-23 16:28:31.6248|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 362.2801ms 
+2022-08-23 16:28:36.5706|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS9" accepted. 
+2022-08-23 16:28:36.5706|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS9" started. 
+2022-08-23 16:28:36.5815|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK52EVVVIS9 established using the following protocol: Tls13 
+2022-08-23 16:28:36.5815|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:28:36.5815|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:28:36.5815|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:28:36.6174|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:28:36.6234|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:28:36.6234|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:28:36.6234|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:28:36.6465|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:28:36.6475|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:28:36.6475|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 16:28:36.6475|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:28:36.6475|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:28:36.6475|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:28:36.6475|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:28:36.8531|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-23 16:28:37.1257|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:28:38.8020|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:28:38.8951|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Company>()
+    .AsNoTracking()
+    .OrderBy(c => c.Name)' 
+2022-08-23 16:28:39.3985|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Company>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Company.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Company.Address (string) Required MaxLength(60), 1], [Property: Company.Country (string) Required, 2], [Property: Company.Name (string) Required MaxLength(60), 3] }
+        SELECT c.CompanyId, c.Address, c.Country, c.Name
+        FROM Companies AS c
+        ORDER BY c.Name ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Company>, 
+    Entities.RepositoryContext, 
+    False, 
+    False, 
+    True
+)' 
+2022-08-23 16:28:39.4770|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:28:39.4816|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:28:39.5328|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (44ms). 
+2022-08-23 16:28:39.5536|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (66ms). 
+2022-08-23 16:28:39.5572|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (82ms). 
+2022-08-23 16:28:39.5640|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:28:39.9166|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:28:39.9376|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:28:40.0840|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (150ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:28:40.1153|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:28:40.1436|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 44ms reading results. 
+2022-08-23 16:28:40.1508|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:28:40.1647|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (13ms). 
+2022-08-23 16:28:40.2201|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-23 16:28:40.2283|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/xml'. 
+2022-08-23 16:28:40.2378|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'text/xml' to write the response. 
+2022-08-23 16:28:40.2378|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:28:40.2696|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 3611.204ms 
+2022-08-23 16:28:40.2696|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:28:40.2739|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:28:40.2844|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:28:40.2911|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (8ms). 
+2022-08-23 16:28:40.2911|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 488 text/xml;+charset=utf-8 3709.7759ms 
+2022-08-23 16:28:46.7917|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies - - 
+2022-08-23 16:28:46.7917|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-23 16:28:46.7917|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies does not match a supported file type 
+2022-08-23 16:28:46.7917|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies' 
+2022-08-23 16:28:46.7917|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' with route pattern 'api/Companies' is valid for the request path '/api/companies' 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:28:46.7917|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:28:46.7917|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCompanies() on controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees). 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-23 16:28:46.7917|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:28:46.7917|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.CompaniesController (CompanyEmployees) 
+2022-08-23 16:28:46.8651|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-23 16:28:46.8694|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-23 16:28:46.8694|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-23 16:28:46.8694|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-23 16:28:46.8694|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:28:46.8694|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-23 16:28:46.8694|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-23 16:28:46.8694|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:28:46.8694|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:28:46.8694|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+ORDER BY c."Name" 
+2022-08-23 16:28:46.8694|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:28:46.8694|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-23 16:28:46.8694|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-23 16:28:46.8694|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:28:46.8716|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-23 16:28:46.8716|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header 'text/csv'. 
+2022-08-23 16:28:46.8716|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'CompanyEmployees.Formatters.CsvOutputFormatter' and content type 'text/csv' to write the response. 
+2022-08-23 16:28:46.8716|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.CompanyDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-23 16:28:46.8716|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees) in 81.3358ms 
+2022-08-23 16:28:46.8716|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.CompaniesController.GetAllCompanies (CompanyEmployees)' 
+2022-08-23 16:28:46.8716|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-23 16:28:46.8716|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-23 16:28:46.8716|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-23 16:28:46.8716|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies - - - 200 - text/csv;+charset=utf-8 82.9059ms 
+2022-08-23 16:29:15.7308|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-23 16:29:15.7350|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-23 16:29:15.7539|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK52EVVVIS9" is closing. 
+2022-08-23 16:29:15.7539|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK52EVVVIS9" is closed. The last processed stream ID was 3. 
+2022-08-23 16:29:15.7587|36|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK52EVVVIS8" is closing. 
+2022-08-23 16:29:15.7587|48|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMK52EVVVIS8" is closed. The last processed stream ID was 11. 
+2022-08-23 16:29:15.7587|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS9" stopped. 
+2022-08-23 16:29:15.7591|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS9" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-23 16:29:15.7591|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS8" received FIN. 
+2022-08-23 16:29:15.7591|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK52EVVVIS8" sending FIN because: "The client closed the connection." 
+2022-08-23 16:29:15.7591|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK52EVVVIS8" stopped. 
+2022-08-23 16:29:15.7653|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
