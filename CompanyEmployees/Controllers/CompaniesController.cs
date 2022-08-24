@@ -90,6 +90,11 @@ public class CompaniesController : ControllerBase
     [HttpPost("collection")]
     public IActionResult CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companies)
     {
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the CompanyForCreationDto object");
+            return UnprocessableEntity(ModelState);
+        }
         if (companies == null)
         {
             _logger.LogError("Parameter companies is null");
@@ -125,6 +130,11 @@ public class CompaniesController : ControllerBase
     [HttpPut("{companyId}")]
     public IActionResult UpdateCompany(Guid companyId,[FromBody]CompanyForUpdateDto companyForUpdateDto)
     {
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the CompanyForUpdateDto object");
+            return UnprocessableEntity(ModelState);
+        }
         if (companyForUpdateDto == null)
         {
             _logger.LogError("CompanyForUpdateDto object sent from client is null.");
@@ -159,7 +169,13 @@ public class CompaniesController : ControllerBase
         }
 
         var companyToPatch = _mapper.Map<CompanyForUpdateDto>(company);
-        companyForUpdateDto.ApplyTo(companyToPatch);
+        companyForUpdateDto.ApplyTo(companyToPatch,ModelState);
+        TryValidateModel(companyToPatch);
+        if(!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the patch document");
+            return UnprocessableEntity(ModelState);
+        }
         _mapper.Map(companyToPatch, company);
         _repository.SaveChanges();
         return NoContent();

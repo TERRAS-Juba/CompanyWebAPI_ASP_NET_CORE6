@@ -60,6 +60,11 @@ public class EmployeesController : ControllerBase
     [HttpPost]
     public IActionResult CreateEmployee(Guid companyId, EmployeeForCreationDto employeeForCreationDto)
     {
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the EmployeeForCreationDto object");
+            return UnprocessableEntity(ModelState);
+        }
         if (employeeForCreationDto == null)
         {
             _logger.LogError("EmployeeForCreationDto object sent from client is null.");
@@ -103,6 +108,11 @@ public class EmployeesController : ControllerBase
     [HttpPut("{employeeId}")]
     public IActionResult UpdateEmployee(Guid companyId,Guid employeeId,[FromBody]EmployeeForUpdateDto employeeForUpdateDto)
     {
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the EmployeeForUpdateDto object");
+            return UnprocessableEntity(ModelState);
+        }
         if (employeeForUpdateDto == null)
         {
             _logger.LogError("EmployeeForUpdateDto object sent from client is null.");
@@ -150,7 +160,13 @@ public class EmployeesController : ControllerBase
         }
 
         var employeeToPatch = _mapper.Map<EmployeeForUpdateDto>(employee);
-        employeeForUpdateDto.ApplyTo(employeeToPatch);
+        employeeForUpdateDto.ApplyTo(employeeToPatch,ModelState);
+        TryValidateModel(employeeToPatch);
+        if(!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid model state for the patch document");
+            return UnprocessableEntity(ModelState);
+        }
         _mapper.Map(employeeToPatch,employee);
         _repository.SaveChanges();
         return NoContent();

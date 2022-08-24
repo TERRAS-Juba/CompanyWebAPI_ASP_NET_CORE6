@@ -5,6 +5,7 @@ using Entities;
 using Entities.Models;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
@@ -32,9 +33,8 @@ builder.Services.AddControllers(config =>
             config.RespectBrowserAcceptHeader = true;
             config.ReturnHttpNotAcceptable = true;
         }
-    ).AddXmlDataContractSerializerFormatters()
-    .AddNewtonsoftJson();
-
+    ).AddNewtonsoftJson();
+    //.AddXmlDataContractSerializerFormatters()
 // Added new OutputFormater wich is csv
 builder.Services.AddMvc(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
 
@@ -55,6 +55,14 @@ builder.Services.AddSwaggerGen();
 // Cors
 builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy", build => build.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+ 
+// Replace error 400 to 422 when validation rules of incoming dto is not valide
+// 400 => Bad request
+// 422 => Unprocessable Entity
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 //====================================================================
 //                              App
