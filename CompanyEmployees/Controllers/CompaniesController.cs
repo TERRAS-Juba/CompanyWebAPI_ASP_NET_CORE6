@@ -121,4 +121,23 @@ public class CompaniesController : ControllerBase
         _repository.SaveChanges();
         return NoContent();
     }
+    [HttpPut("{companyId}")]
+    public IActionResult UpdateCompany(Guid companyId,[FromBody]CompanyForUpdateDto companyForUpdateDto)
+    {
+        if (companyForUpdateDto == null)
+        {
+            _logger.LogError("CompanyForUpdateDto object sent from client is null.");
+            return BadRequest("CompanyForUpdateDto object is null");
+        }
+        var company = _repository.Company.GetCompany(companyId, trackChanges: true);
+        if (company == null)
+        {
+            _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
+            return NotFound();
+        }
+
+        _mapper.Map(companyForUpdateDto, company);
+        _repository.SaveChanges();
+        return NoContent();
+    }
 }

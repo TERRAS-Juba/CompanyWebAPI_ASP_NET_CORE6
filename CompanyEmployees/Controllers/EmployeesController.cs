@@ -99,4 +99,29 @@ public class EmployeesController : ControllerBase
         _repository.SaveChanges();
         return NoContent();
     }
+    [HttpPut("{employeeId}")]
+    public IActionResult UpdateEmployee(Guid companyId,Guid employeeId,[FromBody]EmployeeForUpdateDto employeeForUpdateDto)
+    {
+        if (employeeForUpdateDto == null)
+        {
+            _logger.LogError("EmployeeForUpdateDto object sent from client is null.");
+            return BadRequest("EmployeeForUpdateDto object is null");
+        }
+        var company = _repository.Company.GetCompany(companyId, trackChanges: false);
+        if (company == null)
+        {
+            _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
+            return NotFound();
+        }
+
+        var employee = _repository.Employee.GetEmployee(companyId, employeeId, trackChanges: true);
+        if (employee == null)
+        {
+            _logger.LogInformation($"Employee with id: {employeeId} doesn't exist in the database.");
+            return NotFound();
+        }
+        _mapper.Map(employeeForUpdateDto, employee);
+        _repository.SaveChanges();
+        return NoContent();
+    }
 }

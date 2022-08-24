@@ -26,4 +26,9 @@ public class CompanyRepository : RepositoryBase<Company>, ICompanyRepository
     {
         Delete(company);
     }
+
+    public void UpdateCompany(Company company)
+    {
+        Update(company);
+    }
 }

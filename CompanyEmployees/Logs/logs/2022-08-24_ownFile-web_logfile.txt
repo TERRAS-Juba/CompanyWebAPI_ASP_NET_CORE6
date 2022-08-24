@@ -1,0 +1,57 @@
+2022-08-24 13:04:25.7764|0|INFO|CompanyEmployees.Controllers.EmployeesController|Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce1 doesn't exist in the database. |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce1/Employees/021ca3c1-0deb-4afd-ae94-2159a8479811|action: UpdateEmployee|CompanyEmployees.Controllers.EmployeesController.UpdateEmployee
+2022-08-24 13:04:41.4406|0|INFO|CompanyEmployees.Controllers.EmployeesController|Employee with id: 021ca3c1-0deb-4afd-ae94-2159a8479810 doesn't exist in the database. |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees/021ca3c1-0deb-4afd-ae94-2159a8479810|action: UpdateEmployee|CompanyEmployees.Controllers.EmployeesController.UpdateEmployee
+2022-08-24 14:28:21.8662|0|INFO|CompanyEmployees.Controllers.CompaniesController|Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database. |url: https://localhost/api/Companies/3d490a70-94ce-4d15-9494-5248280c2ce2|action: DeleteCompany|CompanyEmployees.Controllers.CompaniesController.DeleteCompany
+2022-08-24 14:28:32.1574|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CompanyForUpdateDto -> Company
+Entities.DataTransferObjects.CompanyForUpdateDto -> Entities.Models.Company
+   at lambda_method58(Closure , CompanyForUpdateDto , Company , ResolutionContext )
+   at CompanyEmployees.Controllers.CompaniesController.DeleteCompany(Guid companyId, CompanyForUpdateDto companyForUpdateDto) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/CompaniesController.cs:line 139
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Companies/3d490a70-94ce-4d15-9494-5248280c2ce3|action: DeleteCompany|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-24 14:28:32.1736|0|ERROR|Program|Something went wrong: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CompanyForUpdateDto -> Company
+Entities.DataTransferObjects.CompanyForUpdateDto -> Entities.Models.Company
+   at lambda_method58(Closure , CompanyForUpdateDto , Company , ResolutionContext )
+   at CompanyEmployees.Controllers.CompaniesController.DeleteCompany(Guid companyId, CompanyForUpdateDto companyForUpdateDto) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/CompaniesController.cs:line 139
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/Companies/3d490a70-94ce-4d15-9494-5248280c2ce3|action: |Program.<Main

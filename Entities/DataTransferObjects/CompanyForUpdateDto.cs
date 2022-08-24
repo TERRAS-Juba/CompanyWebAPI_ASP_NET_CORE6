@@ -1,6 +1,6 @@
 namespace Entities.DataTransferObjects;
 
-public class CompanyForCreationDto
+public class CompanyForUpdateDto
 {
     public string Name { get; set; }
     public string Address { get; set; }
