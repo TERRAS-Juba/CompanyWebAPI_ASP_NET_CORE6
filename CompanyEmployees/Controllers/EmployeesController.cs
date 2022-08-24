@@ -78,4 +78,25 @@ public class EmployeesController : ControllerBase
         var employeeToReturn  = _mapper.Map<EmployeeDto>(employee);
         return CreatedAtRoute("GetEmployeeById", new {companyId,employeeId=employee.Id }, employeeToReturn);
     }
+
+    [HttpDelete("{employeeId}")]
+    public IActionResult DeleteEmployee(Guid companyId,Guid employeeId)
+    {
+        var company = _repository.Company.GetCompany(companyId, trackChanges: false);
+        if (company == null)
+        {
+            _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
+            return NotFound();
+        }
+
+        var employee = _repository.Employee.GetEmployee(companyId, employeeId, trackChanges: false);
+        if (employee == null)
+        {
+            _logger.LogInformation($"Employee with id: {employeeId} doesn't exist in the database.");
+            return NotFound();
+        }
+        _repository.Employee.DeleteEmployee(employee);
+        _repository.SaveChanges();
+        return NoContent();
+    }
 }
