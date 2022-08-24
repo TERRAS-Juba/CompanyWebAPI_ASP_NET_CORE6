@@ -28,11 +28,12 @@ builder.Services.AddDbContext<RepositoryContext>(o =>
 
 // Add services to the container.
 builder.Services.AddControllers(config =>
-    {
-        config.RespectBrowserAcceptHeader = true;
-        config.ReturnHttpNotAcceptable = true;
-    }
-).AddXmlDataContractSerializerFormatters();
+        {
+            config.RespectBrowserAcceptHeader = true;
+            config.ReturnHttpNotAcceptable = true;
+        }
+    ).AddXmlDataContractSerializerFormatters()
+    .AddNewtonsoftJson();
 
 // Added new OutputFormater wich is csv
 builder.Services.AddMvc(config => config.OutputFormatters.Add(new CsvOutputFormatter()));

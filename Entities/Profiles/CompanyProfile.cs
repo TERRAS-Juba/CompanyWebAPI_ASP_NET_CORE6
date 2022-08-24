@@ -12,5 +12,6 @@ public class CompanyProfile : Profile
             .ForMember(c => c.FullAddress, opt => opt.MapFrom(x => x.Address + " " + x.Country));
         CreateMap<CompanyForCreationDto, Company>();
         CreateMap<CompanyForUpdateDto, Company>();
+        CreateMap<CompanyForUpdateDto, Company>().ReverseMap();
     }
 }

@@ -476,3 +476,17 @@
 2022-08-24 14:51:09.9490 Info Adding target ConsoleTarget(Name=lifetimeConsole)
 2022-08-24 14:51:09.9734 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
 2022-08-24 14:51:10.5504 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-24 17:34:15.6536 Info Message Template Auto Format enabled
+2022-08-24 17:34:15.6826 Info Loading assembly: NLog.Web.AspNetCore
+2022-08-24 17:34:15.7436 Info Adding target FileTarget(Name=allfile)
+2022-08-24 17:34:15.7436 Info Adding target FileTarget(Name=ownFile-web)
+2022-08-24 17:34:15.7436 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-08-24 17:34:15.7741 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-24 17:34:16.3677 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-24 17:44:25.1830 Info Message Template Auto Format enabled
+2022-08-24 17:44:25.2383 Info Loading assembly: NLog.Web.AspNetCore
+2022-08-24 17:44:25.3420 Info Adding target FileTarget(Name=allfile)
+2022-08-24 17:44:25.3449 Info Adding target FileTarget(Name=ownFile-web)
+2022-08-24 17:44:25.3449 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-08-24 17:44:25.3941 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-24 17:44:26.2993 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config

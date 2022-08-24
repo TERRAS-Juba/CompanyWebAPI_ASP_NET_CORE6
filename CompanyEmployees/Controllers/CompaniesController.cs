@@ -4,6 +4,7 @@ using CompanyEmployees.ModelBinders;
 using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers;
@@ -137,6 +138,29 @@ public class CompaniesController : ControllerBase
         }
 
         _mapper.Map(companyForUpdateDto, company);
+        _repository.SaveChanges();
+        return NoContent();
+    }
+
+    [HttpPatch("{companyId}")]
+    public IActionResult PartiallyUpdateCOmpany(Guid companyId,
+        JsonPatchDocument<CompanyForUpdateDto> companyForUpdateDto)
+    {
+        if (companyForUpdateDto == null)
+        {
+            _logger.LogError("CompanyForUpdateDto object sent from client is null.");
+            return BadRequest("CompanyForUpdateDto object is null");
+        }
+        var company = _repository.Company.GetCompany(companyId, trackChanges: true);
+        if (company == null)
+        {
+            _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
+            return NotFound();
+        }
+
+        var companyToPatch = _mapper.Map<CompanyForUpdateDto>(company);
+        companyForUpdateDto.ApplyTo(companyToPatch);
+        _mapper.Map(companyToPatch, company);
         _repository.SaveChanges();
         return NoContent();
     }
