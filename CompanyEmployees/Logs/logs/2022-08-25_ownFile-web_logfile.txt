@@ -1,0 +1,85 @@
+2022-08-25 00:44:06.8379|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Entities.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()|url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees/021ca3c1-0deb-4afd-ae94-2159a8479811|action: GetEmployeeById|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`3.Log
+2022-08-25 00:44:06.9175|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Task`1 -> EmployeeDto
+System.Threading.Tasks.Task`1[[Entities.Models.Employee, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Entities.DataTransferObjects.EmployeeDto
+   at lambda_method36(Closure , Object , EmployeeDto , ResolutionContext )
+   at CompanyEmployees.Controllers.EmployeesController.GetEmployeeById(Guid companyId, Guid employeeId) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/EmployeesController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees/021ca3c1-0deb-4afd-ae94-2159a8479811|action: GetEmployeeById|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-25 00:44:06.9405|0|ERROR|Program|Something went wrong: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Task`1 -> EmployeeDto
+System.Threading.Tasks.Task`1[[Entities.Models.Employee, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Entities.DataTransferObjects.EmployeeDto
+   at lambda_method36(Closure , Object , EmployeeDto , ResolutionContext )
+   at CompanyEmployees.Controllers.EmployeesController.GetEmployeeById(Guid companyId, Guid employeeId) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/EmployeesController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees/021ca3c1-0deb-4afd-ae94-2159a8479811|action: |Program.<Main
+2022-08-25 00:44:06.9664|13|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMK648GEQNPP", Request id "0HMK648GEQNPP:0000000D": An unhandled exception was thrown by the application. System.InvalidOperationException: Can't close, connection is in state Connecting
+   at Npgsql.NpgsqlConnection.Close(Boolean async)
+   at Npgsql.NpgsqlConnection.CloseAsync()
+   at Npgsql.NpgsqlConnection.<DisposeAsync>g__DisposeAsyncCore|108_0()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeDbConnectionAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetStateAsync(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|22_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|22_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|227_0(HttpProtocol protocol, Stack`1 events)|url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees/021ca3c1-0deb-4afd-ae94-2159a8479811|action: |Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.FireOnCompleted
+2022-08-25 00:44:07.2763|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Entities.RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()|url: |action: |Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`3.Log

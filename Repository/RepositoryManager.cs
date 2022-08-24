@@ -34,8 +34,5 @@ public class RepositoryManager : IRepositoryManager
         }
     }
 
-    public void SaveChanges()
-    {
-        _repositoryContext.SaveChanges();
-    }
+    public Task SaveChanges() => _repositoryContext.SaveChangesAsync();
 }

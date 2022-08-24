@@ -595,3 +595,31 @@
 2022-08-24 22:45:03.5973 Info Adding target ConsoleTarget(Name=lifetimeConsole)
 2022-08-24 22:45:03.6504 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
 2022-08-24 22:45:04.5961 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:25:23.9932 Info Message Template Auto Format enabled
+2022-08-25 00:25:24.1079 Info Loading assembly: NLog.Web.AspNetCore
+2022-08-25 00:25:24.3421 Info Adding target FileTarget(Name=allfile)
+2022-08-25 00:25:24.3482 Info Adding target FileTarget(Name=ownFile-web)
+2022-08-25 00:25:24.3497 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-08-25 00:25:24.4568 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:25:26.5479 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:41:51.1226 Info Message Template Auto Format enabled
+2022-08-25 00:41:51.1915 Info Loading assembly: NLog.Web.AspNetCore
+2022-08-25 00:41:51.3214 Info Adding target FileTarget(Name=allfile)
+2022-08-25 00:41:51.3214 Info Adding target FileTarget(Name=ownFile-web)
+2022-08-25 00:41:51.3255 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-08-25 00:41:51.3831 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:41:53.1493 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:43:55.2025 Info Message Template Auto Format enabled
+2022-08-25 00:43:55.2329 Info Loading assembly: NLog.Web.AspNetCore
+2022-08-25 00:43:55.2873 Info Adding target FileTarget(Name=allfile)
+2022-08-25 00:43:55.2873 Info Adding target FileTarget(Name=ownFile-web)
+2022-08-25 00:43:55.2894 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-08-25 00:43:55.3217 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:43:56.0005 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:44:30.7797 Info Message Template Auto Format enabled
+2022-08-25 00:44:30.8346 Info Loading assembly: NLog.Web.AspNetCore
+2022-08-25 00:44:30.9450 Info Adding target FileTarget(Name=allfile)
+2022-08-25 00:44:30.9477 Info Adding target FileTarget(Name=ownFile-web)
+2022-08-25 00:44:30.9477 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-08-25 00:44:30.9950 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
+2022-08-25 00:44:31.7931 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=62, FilePath=/home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/bin/Debug/net6.0/nlog.config
