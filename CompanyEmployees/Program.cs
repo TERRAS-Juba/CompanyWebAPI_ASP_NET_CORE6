@@ -1,4 +1,5 @@
 using System.Net;
+using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Formatters;
 using Contracts;
 using Entities;
@@ -64,6 +65,9 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.SuppressModelStateInvalidFilter = true;
 });
 
+// Added support for personalised filter
+builder.Services.AddScoped<ValidationFilterAttribute>();
+builder.Services.AddScoped<ValidateCompanyExistsAttribute>();
 //====================================================================
 //                              App
 //====================================================================

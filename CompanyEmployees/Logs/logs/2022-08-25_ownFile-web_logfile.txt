@@ -83,3 +83,191 @@ Object name: 'RepositoryContext'.
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
    at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()|url: |action: |Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`3.Log
+2022-08-25 12:13:10.2374|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto object |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:16:50.0355|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:16:50.0355|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the  object |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:16:58.7718|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:16:58.7718|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the  object |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:17:14.2088|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:17:14.2088|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the  object |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:18:07.4356|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting(ActionExecutingContext context) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ActionFilters/ValidationFilterAttribute.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-25 12:18:07.4747|0|ERROR|Program|Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting(ActionExecutingContext context) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ActionFilters/ValidationFilterAttribute.cs:line 21
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: |Program.<Main
+2022-08-25 12:19:35.1048|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:19:35.1189|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the  object |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:20:55.8636|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:22:07.0337|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:22:27.4905|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto object |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:23:43.9348|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:24:30.1083|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:25:24.2257|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:25:54.1524|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:25:57.4531|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:27:05.1019|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:27:10.7881|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:31:17.8678|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity, IEntityType entityType)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.EntryWithoutDetectChanges(TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at Repository.RepositoryBase`1.Create(T entity) in /home/juba/Desktop/C#/CompanyEmployees/Repository/RepositoryBase.cs:line 27
+   at Repository.CompanyRepository.CreateCompany(Company company) in /home/juba/Desktop/C#/CompanyEmployees/Repository/CompanyRepository.cs:line 21
+   at CompanyEmployees.Controllers.CompaniesController.CreateCompany(CompanyForCreationDto companyForCreationDto) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/CompaniesController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Companies|action: CreateCompany|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-25 12:31:17.8929|0|ERROR|Program|Something went wrong: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetOrCreateEntry(Object entity, IEntityType entityType)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.EntryWithoutDetectChanges(TEntity entity)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at Repository.RepositoryBase`1.Create(T entity) in /home/juba/Desktop/C#/CompanyEmployees/Repository/RepositoryBase.cs:line 27
+   at Repository.CompanyRepository.CreateCompany(Company company) in /home/juba/Desktop/C#/CompanyEmployees/Repository/CompanyRepository.cs:line 21
+   at CompanyEmployees.Controllers.CompaniesController.CreateCompany(CompanyForCreationDto companyForCreationDto) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/CompaniesController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/Companies|action: |Program.<Main
+2022-08-25 12:32:51.4364|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object  sent from the client is null , Controller == Companies , Action == CreateCompany |url: https://localhost/api/Companies|action: CreateCompany|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:33:57.4299|0|ERROR|CompanyEmployees.Controllers.EmployeesController|( Object sent from the client is null , Controller == Companies , Action == CreateCompany |url: https://localhost/api/Companies|action: CreateCompany|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 12:34:24.0332|0|ERROR|CompanyEmployees.Controllers.EmployeesController|(Invalid model state for the Entities.DataTransferObjects.CompanyForCreationDto) |url: https://localhost/api/Companies|action: CreateCompany|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 16:23:27.3205|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: No service for type 'CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass10_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Companies/3d490a70-94ce-4d15-9494-5248280c2ce3|action: GetCompany|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-25 16:23:27.3382|0|ERROR|Program|Something went wrong: System.InvalidOperationException: No service for type 'CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.ServiceFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass10_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/Companies/3d490a70-94ce-4d15-9494-5248280c2ce3|action: |Program.<Main
+2022-08-25 16:24:40.9196|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce1 doesn't exist in the database. |url: https://localhost/api/Companies/3d490a70-94ce-4d15-9494-5248280c2ce1|action: GetCompany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 16:29:42.1679|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.NotImplementedException: The method or operation is not implemented.
+   at CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuted(ActionExecutedContext context) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ActionFilters/ValidationFilterAttribute.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Companies|action: CreateCompany|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-25 16:29:42.2063|0|ERROR|Program|Something went wrong: System.NotImplementedException: The method or operation is not implemented.
+   at CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuted(ActionExecutedContext context) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ActionFilters/ValidationFilterAttribute.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/Companies|action: |Program.<Main
+2022-08-25 16:32:25.6420|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 8db73c9d-9e67-4914-a109-5f25004a593d doesn't exist in the database. |url: https://localhost/api/Companies/8db73c9d-9e67-4914-a109-5f25004a593d|action: GetCompany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 16:32:52.2323|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 8db73c9d-9e67-4914-a109-5f25004a5931 doesn't exist in the database. |url: https://localhost/api/Companies/8db73c9d-9e67-4914-a109-5f25004a5931|action: DeleteCompany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 16:33:52.7998|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 8db73c9d-9e67-4914-a109-5f25004a593f doesn't exist in the database. |url: https://localhost/api/Companies/8db73c9d-9e67-4914-a109-5f25004a593f|action: UpdateCompany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 16:34:12.4920|0|ERROR|CompanyEmployees.ActionFilters.ValidationFilterAttribute|(Invalid model state for the Entities.DataTransferObjects.CompanyForUpdateDto) |url: https://localhost/api/Companies/1ba9c010-b969-4431-9579-5f934cefb4a9|action: UpdateCompany|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 16:34:23.7318|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 8db73c9d-9e67-4914-a109-5f25004a593f doesn't exist in the database. |url: https://localhost/api/Companies/8db73c9d-9e67-4914-a109-5f25004a593f|action: UpdateCompany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 16:34:41.1839|0|ERROR|CompanyEmployees.ActionFilters.ValidationFilterAttribute|( Object sent from the client is null , Controller == Companies , Action == UpdateCompany |url: https://localhost/api/Companies/1ba9c010-b969-4431-9579-5f934cefb4a9|action: UpdateCompany|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 16:36:15.3080|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 1ba9c010-b969-4431-9579-5f934cefb4a1 doesn't exist in the database. |url: https://localhost/api/Companies/1ba9c010-b969-4431-9579-5f934cefb4a1|action: PartiallyUpdateCOmpany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 16:36:29.6288|0|ERROR|CompanyEmployees.Controllers.CompaniesController|Invalid model state for the patch document |url: https://localhost/api/Companies/1ba9c010-b969-4431-9579-5f934cefb4a9|action: PartiallyUpdateCOmpany|CompanyEmployees.Controllers.CompaniesController.PartiallyUpdateCOmpany
+2022-08-25 16:36:55.5997|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 1ba9c010-b969-4431-9579-5f934cefb4a1 doesn't exist in the database. |url: https://localhost/api/Companies/1ba9c010-b969-4431-9579-5f934cefb4a1|action: PartiallyUpdateCOmpany|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 17:31:09.3451|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 021ca3c1-0deb-4afd-ae94-2159a8479811 doesn't exist in the database. |url: https://localhost/api/companies/021ca3c1-0deb-4afd-ae94-2159a8479811/Employees|action: GetAllEmployeesByCompanyId|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 17:32:03.7943|0|ERROR|CompanyEmployees.ActionFilters.ValidationFilterAttribute|( Object sent from the client is null , Controller == Employees , Action == CreateEmployee |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 17:32:17.8943|0|ERROR|CompanyEmployees.ActionFilters.ValidationFilterAttribute|(Invalid model state for the Entities.DataTransferObjects.EmployeeForCreationDto) |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees|action: CreateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 17:33:24.8119|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 1ba9c010-b969-4431-9579-5f934cefb4a8 doesn't exist in the database. |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a8/Employees/ac36d036-6d95-4192-a56e-eec02774a1ac|action: GetEmployeeById|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 17:33:36.2922|0|INFO|CompanyEmployees.Controllers.EmployeesController|Employee with id: 1ba9c010-b969-4431-9579-5f934cefb4a9 doesn't exist in the database. |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/ac36d036-6d95-4192-a56e-eec02774a1aa|action: GetEmployeeById|CompanyEmployees.Controllers.EmployeesController.GetEmployeeById
+2022-08-25 17:34:16.7158|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 1ba9c010-b969-4431-9579-5f934cefb4a8 doesn't exist in the database. |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a8/Employees/ac36d036-6d95-4192-a56e-eec02774a1ac|action: DeleteEmployee|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 17:34:24.4197|0|INFO|CompanyEmployees.Controllers.EmployeesController|Employee with id: ac36d036-6d95-4192-a56e-eec02774a1aa doesn't exist in the database. |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/ac36d036-6d95-4192-a56e-eec02774a1aA|action: DeleteEmployee|CompanyEmployees.Controllers.EmployeesController.DeleteEmployee
+2022-08-25 17:36:02.7408|0|ERROR|CompanyEmployees.ActionFilters.ValidationFilterAttribute|( Object sent from the client is null , Controller == Employees , Action == UpdateEmployee |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/98cb8906-136f-4fb7-a9fa-b1b0d9af9f54|action: UpdateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 17:36:53.8398|0|ERROR|CompanyEmployees.ActionFilters.ValidationFilterAttribute|(Invalid model state for the Entities.DataTransferObjects.EmployeeForUpdateDto) |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/98cb8906-136f-4fb7-a9fa-b1b0d9af9f54|action: UpdateEmployee|CompanyEmployees.ActionFilters.ValidationFilterAttribute.OnActionExecuting
+2022-08-25 17:37:03.8917|0|INFO|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute|Company with id: 1ba9c010-b969-4431-9579-5f934cefb4a8 doesn't exist in the database. |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a8/Employees/98cb8906-136f-4fb7-a9fa-b1b0d9af9f54|action: UpdateEmployee|CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute.OnActionExecutionAsync
+2022-08-25 17:37:12.1041|0|INFO|CompanyEmployees.Controllers.EmployeesController|Employee with id: 98cb8906-136f-4fb7-a9fa-b1b0d9af9f53 doesn't exist in the database. |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/98cb8906-136f-4fb7-a9fa-b1b0d9af9f53|action: UpdateEmployee|CompanyEmployees.Controllers.EmployeesController.UpdateEmployee
+2022-08-25 17:38:29.7926|0|ERROR|CompanyEmployees.Controllers.EmployeesController|Invalid model state for the patch document |url: https://localhost/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/98cb8906-136f-4fb7-a9fa-b1b0d9af9f54|action: PartiallyUpdateEmployee|CompanyEmployees.Controllers.EmployeesController.PartiallyUpdateEmployee
