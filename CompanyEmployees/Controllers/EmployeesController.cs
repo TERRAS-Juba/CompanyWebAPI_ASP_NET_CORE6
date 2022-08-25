@@ -36,6 +36,10 @@ public class EmployeesController : ControllerBase
             _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
             return NotFound();
         }*/
+        if (!employeeParameters.ValidAgeRange)
+        {
+            return BadRequest("Max age can't be less than min age."); 
+        }
         var employees = await _repository.Employee.GetAllEmployeesByPaging(companyId, employeeParameters, trackChanges: false);
         var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
         return Ok(employeesDto);
