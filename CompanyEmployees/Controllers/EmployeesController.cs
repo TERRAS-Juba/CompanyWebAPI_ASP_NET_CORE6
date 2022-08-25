@@ -3,6 +3,7 @@ using CompanyEmployees.ActionFilters;
 using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,6 +25,22 @@ public class EmployeesController : ControllerBase
     }
 
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
+    [HttpGet("paging")]
+    public async Task<IActionResult> GetAllEmployeesByCompanyIdByPaging(Guid companyId,[FromQuery] EmployeeParameters employeeParameters)
+    {
+        // Added via filter : ValidateCompanyExistsAttribute))]
+        /*
+        var company = await _repository.Company.GetCompany(companyId, trackChanges: false);
+        if (company == null)
+        {
+            _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
+            return NotFound();
+        }*/
+        var employees = await _repository.Employee.GetAllEmployeesByPaging(companyId, employeeParameters, trackChanges: false);
+        var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
+        return Ok(employeesDto);
+    }
+    [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpGet]
     public async Task<IActionResult> GetAllEmployeesByCompanyId(Guid companyId)
     {
@@ -35,7 +52,7 @@ public class EmployeesController : ControllerBase
             _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
             return NotFound();
         }*/
-        var employees = await _repository.Employee.GetAllEmployees(companyId, trackChanges: false);
+        var employees = await _repository.Employee.GetAllEmployees(companyId,  trackChanges: false);
         var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
         return Ok(employeesDto);
     }

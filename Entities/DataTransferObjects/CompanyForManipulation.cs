@@ -15,5 +15,5 @@ public abstract class CompanyForManipulation
     public string Address { get; set; }
 
     public string Country { get; set; }
-    private ICollection<Employee> Employees { get; set; }
+    private IEnumerable<Employee> Employees { get; set; }
 }
