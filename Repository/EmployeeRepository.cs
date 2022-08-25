@@ -1,9 +1,9 @@
+using CompanyEmployees.Extensions;
 using Contracts;
 using Entities;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
-
 namespace Repository;
 
 public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
@@ -18,7 +18,9 @@ public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
         =>await FindByCondition(c=>c.CompanyId.Equals(companyId),trackChanges)
             .ToListAsync();
     public async Task<IEnumerable<Employee>> GetAllEmployeesByPaging(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
-    =>await FindByCondition(c=>c.CompanyId.Equals(companyId) && c.Age>=employeeParameters.MinAge && c.Age<=employeeParameters.MaxAge && (employeeParameters.Position!=null ?c.Position==employeeParameters.Position:true),trackChanges)
+    =>await FindByCondition(c=>c.CompanyId.Equals(companyId),trackChanges)
+        .FilterEmployees(employeeParameters)
+        .Search(employeeParameters.SearchTerm)
         .Skip((employeeParameters.pageNumber-1)*employeeParameters.PageSize)
         .Take(employeeParameters.PageSize)
         .ToListAsync();

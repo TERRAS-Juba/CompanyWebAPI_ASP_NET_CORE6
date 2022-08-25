@@ -6,4 +6,6 @@ public class EmployeeParameters:RequestParameters
     public uint MaxAge { get; set; } = int.MaxValue;
     public string Position { get; set; }
     public bool ValidAgeRange => MaxAge > MinAge;
+    public string SearchTerm { get; set; }
+
 }

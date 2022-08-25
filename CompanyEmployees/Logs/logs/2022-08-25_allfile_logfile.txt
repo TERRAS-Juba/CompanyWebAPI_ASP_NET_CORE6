@@ -17054,3 +17054,720 @@ LIMIT @__p_5 OFFSET @__p_4
 2022-08-25 19:54:21.3627|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK6OAHDTODE" sending FIN because: "The client closed the connection." 
 2022-08-25 19:54:21.3655|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6OAHDTODE" stopped. 
 2022-08-25 19:54:21.3688|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-25 22:31:30.1485|4|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. 
+2022-08-25 22:31:30.3733|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-25 22:31:30.4199|62|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/home/juba/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2022-08-25 22:31:30.5554|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-25 22:31:30.5645|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file '/home/juba/.aspnet/DataProtection-Keys/key-324ff622-563d-43ca-86a6-5ce1ff67b55b.xml'. 
+2022-08-25 22:31:30.5789|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {324ff622-563d-43ca-86a6-5ce1ff67b55b}. 
+2022-08-25 22:31:30.6045|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {324ff622-563d-43ca-86a6-5ce1ff67b55b} with expiration date 2022-11-21 14:28:29Z as default key. 
+2022-08-25 22:31:30.6161|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-25 22:31:30.6223|11|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory|Using managed symmetric algorithm 'System.Security.Cryptography.Aes'. 
+2022-08-25 22:31:30.6223|10|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory|Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'. 
+2022-08-25 22:31:30.6467|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {324ff622-563d-43ca-86a6-5ce1ff67b55b} as the default key. 
+2022-08-25 22:31:30.6480|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {324ff622-563d-43ca-86a6-5ce1ff67b55b} was loaded during application startup. 
+2022-08-25 22:31:30.9101|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-25 22:31:31.1211|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-25 22:31:31.1516|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-25 22:31:31.1516|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-25 22:31:31.1516|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-25 22:31:31.1516|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-25 22:31:31.1516|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-25 22:31:31.1516|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-25 22:31:32.6302|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPA" accepted. 
+2022-08-25 22:31:32.6316|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPA" started. 
+2022-08-25 22:31:32.7018|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPB" accepted. 
+2022-08-25 22:31:32.7018|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPB" started. 
+2022-08-25 22:31:32.7018|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK6R365VHPA" received FIN. 
+2022-08-25 22:31:32.7183|6|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK6R365VHPB" received FIN. 
+2022-08-25 22:31:32.7210|39|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPC" accepted. 
+2022-08-25 22:31:32.7210|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPC" started. 
+2022-08-25 22:31:32.7242|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-25 22:31:32.7242|1|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.Security.Authentication.AuthenticationException: Authentication failed, see inner exception.
+ ---> Interop+OpenSsl+SslException: SSL Handshake failed with OpenSSL error - SSL_ERROR_SSL.
+ ---> Interop+Crypto+OpenSslCryptographicException: error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown
+   --- End of inner exception stack trace ---
+   at Interop.OpenSsl.DoSslHandshake(SafeSslHandle context, ReadOnlySpan`1 input, Byte[]& sendBuf, Int32& sendCount)
+   at System.Net.Security.SslStreamPal.HandshakeInternal(SafeFreeCredentials credential, SafeDeleteSslContext& context, ReadOnlySpan`1 inputBuffer, Byte[]& outputBuffer, SslAuthenticationOptions sslAuthenticationOptions)
+   --- End of inner exception stack trace ---
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-08-25 22:31:32.7632|3|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMK6R365VHPC established using the following protocol: Tls13 
+2022-08-25 22:31:32.7879|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPB" stopped. 
+2022-08-25 22:31:32.7879|2|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMK6R365VHPA" stopped. 
+2022-08-25 22:31:32.7879|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK6R365VHPA" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-25 22:31:32.7918|7|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMK6R365VHPB" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2022-08-25 22:31:32.8673|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - - 
+2022-08-25 22:31:32.8687|0|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2022-08-25 22:31:33.0800|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 217.6763ms 
+2022-08-25 22:31:33.1589|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - 
+2022-08-25 22:31:33.1589|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - 
+2022-08-25 22:31:33.1589|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - 
+2022-08-25 22:31:33.2085|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2022-08-25 22:31:33.2085|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2022-08-25 22:31:33.2085|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2022-08-25 22:31:33.2085|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 50.6865ms 
+2022-08-25 22:31:33.2085|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 50.7807ms 
+2022-08-25 22:31:33.2085|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143632 text/css 50.8982ms 
+2022-08-25 22:31:33.8867|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - 
+2022-08-25 22:31:33.9692|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - 
+2022-08-25 22:31:33.9692|2|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2022-08-25 22:31:33.9692|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - - 200 628 image/png 1.1067ms 
+2022-08-25 22:31:34.3914|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 504.7469ms 
+2022-08-25 22:32:40.0291|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging - - 
+2022-08-25 22:32:40.0291|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-25 22:32:40.0291|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging does not match a supported file type 
+2022-08-25 22:32:40.0681|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:32:40.0728|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' with route pattern 'api/companies/{companyId}/Employees/paging' is valid for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:32:40.0728|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:32:40.0758|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:32:40.3014|10401|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2022-08-25 22:32:40.4026|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployeesByCompanyIdByPaging", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeesByCompanyIdByPaging(System.Guid, Entities.RequestFeatures.EmployeeParameters) on controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees). 
+2022-08-25 22:32:40.4040|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-25 22:32:40.4040|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-25 22:32:40.4040|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute 
+2022-08-25 22:32:40.4040|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-25 22:32:40.4040|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-25 22:32:40.4040|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:32:40.7020|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:32:40.7063|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:32:40.7085|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' using the name 'companyId' in request data ... 
+2022-08-25 22:32:40.7085|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:32:40.7085|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:32:40.7085|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:32:40.7085|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:32:40.7148|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:32:40.7148|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' using the name '' in request data ... 
+2022-08-25 22:32:40.7223|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32' using the name 'MinAge' in request data ... 
+2022-08-25 22:32:40.7223|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MinAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:32:40.7243|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:32:40.7243|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32' using the name 'MaxAge' in request data ... 
+2022-08-25 22:32:40.7243|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MaxAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:32:40.7243|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:32:40.7243|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String' using the name 'Position' in request data ... 
+2022-08-25 22:32:40.7243|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Position' for binding property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:32:40.7243|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:32:40.7243|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String' using the name 'SearchTerm' in request data ... 
+2022-08-25 22:32:40.7243|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'SearchTerm' for binding property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:32:40.7243|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:32:40.7243|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ... 
+2022-08-25 22:32:40.7243|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'pageNumber' for binding property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:32:40.7243|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:32:40.7243|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2022-08-25 22:32:40.7243|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:32:40.7243|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:32:40.7243|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:32:40.7243|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:32:40.7243|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:32:40.7372|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:32:42.7222|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-25 22:32:42.9397|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Company>()
+    .Where(c => c.Id.Equals(__companyId_0))
+    .AsNoTracking()
+    .SingleOrDefault()' 
+2022-08-25 22:32:43.6865|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Company>(
+    asyncEnumerable: new SingleQueryingEnumerable<Company>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Company.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Company.Address (string) Required MaxLength(60), 1], [Property: Company.Country (string) Required, 2], [Property: Company.Name (string) Required MaxLength(60), 3] }
+            SELECT TOP(2) c.CompanyId, c.Address, c.Country, c.Name
+            FROM Companies AS c
+            WHERE c.CompanyId == @__companyId_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Company>, 
+        Entities.RepositoryContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)' 
+2022-08-25 22:32:43.8247|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:32:43.8307|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-25 22:32:43.9052|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (65ms). 
+2022-08-25 22:32:43.9252|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (92ms). 
+2022-08-25 22:32:43.9430|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (121ms). 
+2022-08-25 22:32:43.9583|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:32:44.4233|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:44.4724|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:32:44.7220|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (268ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:32:44.7953|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:44.8470|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 95ms reading results. 
+2022-08-25 22:32:44.8665|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:44.8938|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (26ms). 
+2022-08-25 22:32:44.9426|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()
+    .Where(c => c.CompanyId.Equals(__companyId_0))
+    .AsNoTracking()
+    .Where(e => (long)e.Age >= __p_1 && (long)e.Age <= __p_2 && True)
+    .Skip(__p_3)
+    .Take(__p_4)' 
+2022-08-25 22:32:44.9820|10102|WARN|Microsoft.EntityFrameworkCore.Query|The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+2022-08-25 22:32:45.0282|10102|WARN|Microsoft.EntityFrameworkCore.Query|The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+2022-08-25 22:32:45.0489|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Age (int) Required, 1], [Property: Employee.CompanyId (Guid) Required FK Index, 2], [Property: Employee.Name (string) Required MaxLength(30), 3], [Property: Employee.Position (string) Required MaxLength(20), 4] }
+        SELECT e.EmployeeId, e.Age, e.CompanyId, e.Name, e.Position
+        FROM Employees AS e
+        WHERE (e.CompanyId == @__companyId_0) && (((CAST(e.Age AS bigint) >= @__p_1) && (CAST(e.Age AS bigint) <= @__p_2)) && TRUE)
+        ORDER BY (SELECT 1)
+        OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    Entities.RepositoryContext, 
+    False, 
+    False, 
+    True
+)' 
+2022-08-25 22:32:45.0560|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:32:45.0560|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:32:45.0560|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:32:45.0560|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:32:45.0560|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:45.0560|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_4='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2
+LIMIT @__p_4 OFFSET @__p_3 
+2022-08-25 22:32:45.0841|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (28ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_4='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2
+LIMIT @__p_4 OFFSET @__p_3 
+2022-08-25 22:32:45.0934|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:45.0934|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 9ms reading results. 
+2022-08-25 22:32:45.0934|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:45.0934|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:32:45.1977|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-25 22:32:45.2177|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header '*/*'. 
+2022-08-25 22:32:45.2203|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-25 22:32:45.2203|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-25 22:32:45.7963|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees) in 5374.7652ms 
+2022-08-25 22:32:45.8003|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:32:45.8384|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-25 22:32:45.8613|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-25 22:32:45.8738|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (13ms). 
+2022-08-25 22:32:45.8801|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging - - - 200 751 application/json;+charset=utf-8 5850.9565ms 
+2022-08-25 22:32:58.5868|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?SearchTerm=Marketing - - 
+2022-08-25 22:32:58.5868|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-25 22:32:58.5868|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging does not match a supported file type 
+2022-08-25 22:32:58.5868|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:32:58.5868|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' with route pattern 'api/companies/{companyId}/Employees/paging' is valid for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:32:58.5868|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:32:58.5868|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:32:58.5882|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployeesByCompanyIdByPaging", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeesByCompanyIdByPaging(System.Guid, Entities.RequestFeatures.EmployeeParameters) on controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees). 
+2022-08-25 22:32:58.5882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-25 22:32:58.5882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-25 22:32:58.5882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute 
+2022-08-25 22:32:58.5882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-25 22:32:58.5882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-25 22:32:58.5882|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:32:58.5882|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:32:58.5951|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:32:58.5951|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' using the name 'companyId' in request data ... 
+2022-08-25 22:32:58.5951|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:32:58.5951|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:32:58.5951|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:32:58.5951|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:32:58.5951|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:32:58.5965|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' using the name '' in request data ... 
+2022-08-25 22:32:58.5965|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32' using the name 'MinAge' in request data ... 
+2022-08-25 22:32:58.5965|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MinAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:32:58.5965|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:32:58.5965|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32' using the name 'MaxAge' in request data ... 
+2022-08-25 22:32:58.5965|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MaxAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:32:58.5965|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:32:58.5965|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String' using the name 'Position' in request data ... 
+2022-08-25 22:32:58.5965|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Position' for binding property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:32:58.5965|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:32:58.5965|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String' using the name 'SearchTerm' in request data ... 
+2022-08-25 22:32:58.5965|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:32:58.5965|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ... 
+2022-08-25 22:32:58.5965|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'pageNumber' for binding property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:32:58.5965|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:32:58.5965|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2022-08-25 22:32:58.5965|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:32:58.5965|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:32:58.5965|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:32:58.5965|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:32:58.5965|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:32:58.5965|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:32:58.6654|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-25 22:32:58.6703|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:32:58.6703|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-25 22:32:58.6703|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-25 22:32:58.6703|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:32:58.6703|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:32:58.6703|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:32:58.6703|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:58.6703|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:32:58.6779|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:32:58.6779|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:58.6779|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:32:58.6779|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:58.6779|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:32:58.6818|10111|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Employee>()
+    .Where(c => c.CompanyId.Equals(__companyId_0))
+    .AsNoTracking()
+    .Where(e => (long)e.Age >= __p_1 && (long)e.Age <= __p_2 && True)
+    .Where(e => e.Name.ToLower().Contains(__lowerCaseTerm_3) || e.Position.ToLower().Contains(__lowerCaseTerm_3))
+    .Skip(__p_4)
+    .Take(__p_5)' 
+2022-08-25 22:32:58.7020|10102|WARN|Microsoft.EntityFrameworkCore.Query|The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+2022-08-25 22:32:58.7020|10102|WARN|Microsoft.EntityFrameworkCore.Query|The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased. 
+2022-08-25 22:32:58.7076|10107|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Employee>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.Age (int) Required, 1], [Property: Employee.CompanyId (Guid) Required FK Index, 2], [Property: Employee.Name (string) Required MaxLength(30), 3], [Property: Employee.Position (string) Required MaxLength(20), 4] }
+        SELECT e.EmployeeId, e.Age, e.CompanyId, e.Name, e.Position
+        FROM Employees AS e
+        WHERE ((e.CompanyId == @__companyId_0) && (((CAST(e.Age AS bigint) >= @__p_1) && (CAST(e.Age AS bigint) <= @__p_2)) && TRUE)) && (((@__lowerCaseTerm_3 == '') || (strpos(lower(e.Name), @__lowerCaseTerm_3) > 0)) || ((@__lowerCaseTerm_3 == '') || (strpos(lower(e.Position), @__lowerCaseTerm_3) > 0)))
+        ORDER BY (SELECT 1)
+        OFFSET @__p_4 ROWS FETCH NEXT @__p_5 ROWS ONLY), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Employee>, 
+    Entities.RepositoryContext, 
+    False, 
+    False, 
+    True
+)' 
+2022-08-25 22:32:58.7132|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:32:58.7132|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:32:58.7132|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (1ms). 
+2022-08-25 22:32:58.7132|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:32:58.7132|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:58.7132|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:32:58.7236|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:32:58.7236|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:58.7236|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 2ms reading results. 
+2022-08-25 22:32:58.7236|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:32:58.7236|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:32:58.7341|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-25 22:32:58.7341|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header '*/*'. 
+2022-08-25 22:32:58.7341|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-25 22:32:58.7341|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-25 22:32:58.7341|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees) in 146.8229ms 
+2022-08-25 22:32:58.7341|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:32:58.7341|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-25 22:32:58.7357|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-25 22:32:58.7357|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:32:58.7357|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?SearchTerm=Marketing - - - 200 644 application/json;+charset=utf-8 148.9770ms 
+2022-08-25 22:33:24.0188|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?SearchTerm=John - - 
+2022-08-25 22:33:24.0188|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-25 22:33:24.0188|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging does not match a supported file type 
+2022-08-25 22:33:24.0196|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:33:24.0196|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' with route pattern 'api/companies/{companyId}/Employees/paging' is valid for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:33:24.0196|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:24.0196|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:24.0244|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployeesByCompanyIdByPaging", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeesByCompanyIdByPaging(System.Guid, Entities.RequestFeatures.EmployeeParameters) on controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees). 
+2022-08-25 22:33:24.0244|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-25 22:33:24.0244|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-25 22:33:24.0244|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute 
+2022-08-25 22:33:24.0244|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-25 22:33:24.0244|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-25 22:33:24.0244|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:33:24.0244|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:33:24.0244|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:33:24.0244|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' using the name 'companyId' in request data ... 
+2022-08-25 22:33:24.0244|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:24.0244|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:24.0244|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:33:24.0244|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:24.0244|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:33:24.0244|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' using the name '' in request data ... 
+2022-08-25 22:33:24.0244|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32' using the name 'MinAge' in request data ... 
+2022-08-25 22:33:24.0244|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MinAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:33:24.0244|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:33:24.0244|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32' using the name 'MaxAge' in request data ... 
+2022-08-25 22:33:24.0244|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MaxAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:33:24.0244|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:33:24.0244|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String' using the name 'Position' in request data ... 
+2022-08-25 22:33:24.0244|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Position' for binding property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:33:24.0244|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:33:24.0244|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String' using the name 'SearchTerm' in request data ... 
+2022-08-25 22:33:24.0244|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:33:24.0244|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ... 
+2022-08-25 22:33:24.0244|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'pageNumber' for binding property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:33:24.0244|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:33:24.0244|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2022-08-25 22:33:24.0244|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:33:24.0244|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:33:24.0244|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:24.0244|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:24.0244|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:33:24.0244|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:24.0432|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-25 22:33:24.0447|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:33:24.0447|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-25 22:33:24.0447|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-25 22:33:24.0447|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:24.0447|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:24.0447|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:24.0447|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:24.0447|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:33:24.0447|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:33:24.0447|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:24.0447|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:33:24.0447|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:24.0447|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:24.0492|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:33:24.0492|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:24.0492|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:24.0492|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:24.0492|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:24.0492|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:33:24.0492|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:33:24.0492|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:24.0492|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:33:24.0492|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:24.0492|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:24.0492|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-25 22:33:24.0492|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header '*/*'. 
+2022-08-25 22:33:24.0492|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-25 22:33:24.0492|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-25 22:33:24.0517|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees) in 27.03ms 
+2022-08-25 22:33:24.0517|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:24.0517|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-25 22:33:24.0517|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:24.0517|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:24.0517|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?SearchTerm=John - - - 200 109 application/json;+charset=utf-8 33.0541ms 
+2022-08-25 22:33:34.3527|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging - - 
+2022-08-25 22:33:34.3527|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-25 22:33:34.3527|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging does not match a supported file type 
+2022-08-25 22:33:34.3527|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:33:34.3527|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' with route pattern 'api/companies/{companyId}/Employees/paging' is valid for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:34.3527|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:34.3527|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployeesByCompanyIdByPaging", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeesByCompanyIdByPaging(System.Guid, Entities.RequestFeatures.EmployeeParameters) on controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees). 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-25 22:33:34.3527|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:33:34.3527|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:33:34.3527|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:33:34.3527|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' using the name 'companyId' in request data ... 
+2022-08-25 22:33:34.3527|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:34.3527|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:34.3527|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:33:34.3527|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:34.3527|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:33:34.3527|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' using the name '' in request data ... 
+2022-08-25 22:33:34.3527|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32' using the name 'MinAge' in request data ... 
+2022-08-25 22:33:34.3527|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MinAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:33:34.3527|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:33:34.3527|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32' using the name 'MaxAge' in request data ... 
+2022-08-25 22:33:34.3527|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MaxAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:33:34.3527|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:33:34.3527|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String' using the name 'Position' in request data ... 
+2022-08-25 22:33:34.3527|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Position' for binding property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:33:34.3527|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:33:34.3527|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String' using the name 'SearchTerm' in request data ... 
+2022-08-25 22:33:34.3527|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'SearchTerm' for binding property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:33:34.3527|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:33:34.3527|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ... 
+2022-08-25 22:33:34.3527|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'pageNumber' for binding property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:33:34.3527|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:33:34.3527|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2022-08-25 22:33:34.3527|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:33:34.3527|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:33:34.3527|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:34.3527|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:34.3527|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:33:34.3527|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:34.3527|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-25 22:33:34.3527|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:33:34.3527|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-25 22:33:34.3527|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-25 22:33:34.3527|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:34.3527|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:34.3527|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:34.3527|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:34.3527|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:33:34.3557|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:33:34.3557|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:34.3557|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:33:34.3557|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:34.3557|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:34.3557|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:33:34.3557|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:34.3557|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:34.3557|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:34.3557|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:34.3557|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_4='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2
+LIMIT @__p_4 OFFSET @__p_3 
+2022-08-25 22:33:34.3557|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_4='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2
+LIMIT @__p_4 OFFSET @__p_3 
+2022-08-25 22:33:34.3557|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:34.3557|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:33:34.3557|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:34.3557|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:34.3596|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-25 22:33:34.3596|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header '*/*'. 
+2022-08-25 22:33:34.3596|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-25 22:33:34.3596|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-25 22:33:34.3596|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees) in 6.6447ms 
+2022-08-25 22:33:34.3596|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:34.3596|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-25 22:33:34.3596|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:34.3596|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:34.3596|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging - - - 200 751 application/json;+charset=utf-8 7.5269ms 
+2022-08-25 22:33:53.2088|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?SearchTerm=II - - 
+2022-08-25 22:33:53.2088|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-25 22:33:53.2088|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging does not match a supported file type 
+2022-08-25 22:33:53.2088|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:33:53.2088|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' with route pattern 'api/companies/{companyId}/Employees/paging' is valid for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:53.2088|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:53.2088|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployeesByCompanyIdByPaging", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeesByCompanyIdByPaging(System.Guid, Entities.RequestFeatures.EmployeeParameters) on controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees). 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-25 22:33:53.2088|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:33:53.2088|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:33:53.2088|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:33:53.2088|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' using the name 'companyId' in request data ... 
+2022-08-25 22:33:53.2088|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:53.2088|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:53.2088|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:33:53.2088|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:33:53.2088|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:33:53.2088|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' using the name '' in request data ... 
+2022-08-25 22:33:53.2088|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32' using the name 'MinAge' in request data ... 
+2022-08-25 22:33:53.2088|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MinAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:33:53.2088|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:33:53.2088|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32' using the name 'MaxAge' in request data ... 
+2022-08-25 22:33:53.2088|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'MaxAge' for binding property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:33:53.2088|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:33:53.2088|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String' using the name 'Position' in request data ... 
+2022-08-25 22:33:53.2088|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Position' for binding property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:33:53.2088|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:33:53.2088|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String' using the name 'SearchTerm' in request data ... 
+2022-08-25 22:33:53.2088|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:33:53.2088|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ... 
+2022-08-25 22:33:53.2088|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'pageNumber' for binding property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:33:53.2088|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:33:53.2088|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2022-08-25 22:33:53.2088|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:33:53.2088|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:33:53.2088|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:53.2088|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:53.2088|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:33:53.2088|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:33:53.2088|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-25 22:33:53.2118|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:33:53.2118|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-25 22:33:53.2118|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-25 22:33:53.2118|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:53.2118|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:53.2118|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:53.2118|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:53.2118|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:33:53.2118|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:33:53.2118|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:53.2118|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:33:53.2118|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:53.2118|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:53.2165|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:33:53.2165|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:53.2165|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:33:53.2165|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:53.2165|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:53.2165|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:33:53.2165|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:33:53.2165|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:53.2165|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:33:53.2165|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:33:53.2165|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:53.2165|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-25 22:33:53.2165|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header '*/*'. 
+2022-08-25 22:33:53.2165|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-25 22:33:53.2165|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-25 22:33:53.2165|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees) in 8.5725ms 
+2022-08-25 22:33:53.2165|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:33:53.2165|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-25 22:33:53.2165|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-25 22:33:53.2165|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:33:53.2165|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?SearchTerm=II - - - 200 326 application/json;+charset=utf-8 9.4481ms 
+2022-08-25 22:34:17.4791|1|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?MinAge=30&MaxAge=35&SearchTerm=II - - 
+2022-08-25 22:34:17.4791|3|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2022-08-25 22:34:17.4791|4|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path /api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging does not match a supported file type 
+2022-08-25 22:34:17.4791|1001|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:34:17.4791|1005|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' with route pattern 'api/companies/{companyId}/Employees/paging' is valid for the request path '/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging' 
+2022-08-25 22:34:17.4791|1|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:34:17.4791|0|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:34:17.4798|3|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllEmployeesByCompanyIdByPaging", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEmployeesByCompanyIdByPaging(System.Guid, Entities.RequestFeatures.EmployeeParameters) on controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees). 
+2022-08-25 22:34:17.4798|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2022-08-25 22:34:17.4798|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter 
+2022-08-25 22:34:17.4798|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), CompanyEmployees.ActionFilters.ValidateCompanyExistsAttribute 
+2022-08-25 22:34:17.4798|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2022-08-25 22:34:17.4798|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter, Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2022-08-25 22:34:17.4798|1|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:34:17.4798|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller CompanyEmployees.Controllers.EmployeesController (CompanyEmployees) 
+2022-08-25 22:34:17.4798|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:34:17.4798|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'companyId' of type 'System.Guid' using the name 'companyId' in request data ... 
+2022-08-25 22:34:17.4798|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:34:17.4798|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:34:17.4798|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'companyId' of type 'System.Guid' ... 
+2022-08-25 22:34:17.4798|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'companyId' of type 'System.Guid'. 
+2022-08-25 22:34:17.4798|22|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:34:17.4798|44|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' using the name '' in request data ... 
+2022-08-25 22:34:17.4798|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32' using the name 'MinAge' in request data ... 
+2022-08-25 22:34:17.4798|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MinAge' of type 'System.UInt32'. 
+2022-08-25 22:34:17.4798|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32' using the name 'MaxAge' in request data ... 
+2022-08-25 22:34:17.4798|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.MaxAge' of type 'System.UInt32'. 
+2022-08-25 22:34:17.4798|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String' using the name 'Position' in request data ... 
+2022-08-25 22:34:17.4798|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Position' for binding property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:34:17.4798|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.Position' of type 'System.String'. 
+2022-08-25 22:34:17.4798|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String' using the name 'SearchTerm' in request data ... 
+2022-08-25 22:34:17.4798|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.SearchTerm' of type 'System.String'. 
+2022-08-25 22:34:17.4798|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32' using the name 'pageNumber' in request data ... 
+2022-08-25 22:34:17.4798|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'pageNumber' for binding property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:34:17.4798|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.pageNumber' of type 'System.Int32'. 
+2022-08-25 22:34:17.4798|13|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2022-08-25 22:34:17.4798|15|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:34:17.4798|14|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind property 'Entities.RequestFeatures.EmployeeParameters.PageSize' of type 'System.Int32'. 
+2022-08-25 22:34:17.4798|45|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:34:17.4798|23|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:34:17.4798|26|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters' ... 
+2022-08-25 22:34:17.4798|27|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'employeeParameters' of type 'Entities.RequestFeatures.EmployeeParameters'. 
+2022-08-25 22:34:17.4798|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 7.0.0-preview.7.22376.2 initialized 'RepositoryContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:7.0.0-preview.7+962e65bd8d5cf095cf0eb1d0a674fad8038c47a2' with options: MigrationsAssembly=CompanyEmployees  
+2022-08-25 22:34:17.4798|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:34:17.4798|20005|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2022-08-25 22:34:17.4798|20006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2022-08-25 22:34:17.4798|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:34:17.4798|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:34:17.4798|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:34:17.4798|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:34:17.4798|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:34:17.4840|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT c."CompanyId", c."Address", c."Country", c."Name"
+FROM "Companies" AS c
+WHERE c."CompanyId" = @__companyId_0
+LIMIT 2 
+2022-08-25 22:34:17.4840|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:34:17.4840|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:34:17.4840|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:34:17.4840|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:34:17.4840|20103|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2022-08-25 22:34:17.4840|20104|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:34:17.4840|20106|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2022-08-25 22:34:17.4840|20000|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'MyCompany' on server ''. 
+2022-08-25 22:34:17.4840|20001|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:34:17.4840|20100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:34:17.4840|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__lowerCaseTerm_3='?', @__lowerCaseTerm_3_1='?', @__p_5='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT e."EmployeeId", e."Age", e."CompanyId", e."Name", e."Position"
+FROM "Employees" AS e
+WHERE e."CompanyId" = @__companyId_0 AND e."Age"::bigint >= @__p_1 AND e."Age"::bigint <= @__p_2 AND (@__lowerCaseTerm_3 = '' OR strpos(lower(e."Name"), @__lowerCaseTerm_3) > 0 OR @__lowerCaseTerm_3_1 = '' OR strpos(lower(e."Position"), @__lowerCaseTerm_3) > 0)
+LIMIT @__p_5 OFFSET @__p_4 
+2022-08-25 22:34:17.4840|20301|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:34:17.4840|20300|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'MyCompany' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results. 
+2022-08-25 22:34:17.4840|20002|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'MyCompany' on server 'tcp://localhost:5432'. 
+2022-08-25 22:34:17.4840|20003|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:34:17.4876|11|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter, CompanyEmployees.Formatters.CsvOutputFormatter 
+2022-08-25 22:34:17.4876|6|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter based on Accept header '*/*'. 
+2022-08-25 22:34:17.4876|2|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2022-08-25 22:34:17.4876|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entities.DataTransferObjects.EmployeeDto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2022-08-25 22:34:17.4876|2|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees) in 7.8755ms 
+2022-08-25 22:34:17.4876|1|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'CompanyEmployees.Controllers.EmployeesController.GetAllEmployeesByCompanyIdByPaging (CompanyEmployees)' 
+2022-08-25 22:34:17.4876|10407|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'RepositoryContext' disposed. 
+2022-08-25 22:34:17.4876|20007|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'MyCompany' on server ''. 
+2022-08-25 22:34:17.4876|20008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'MyCompany' on server '' (0ms). 
+2022-08-25 22:34:17.4876|2|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:5001/api/companies/1ba9c010-b969-4431-9579-5f934cefb4a9/Employees/paging?MinAge=30&MaxAge=35&SearchTerm=II - - - 200 219 application/json;+charset=utf-8 9.0369ms 
