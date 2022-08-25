@@ -21,6 +21,7 @@ public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
     =>await FindByCondition(c=>c.CompanyId.Equals(companyId),trackChanges)
         .FilterEmployees(employeeParameters)
         .Search(employeeParameters.SearchTerm)
+        .Sort(employeeParameters.OrderBy)
         .Skip((employeeParameters.pageNumber-1)*employeeParameters.PageSize)
         .Take(employeeParameters.PageSize)
         .ToListAsync();
