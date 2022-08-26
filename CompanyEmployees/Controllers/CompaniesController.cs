@@ -5,6 +5,7 @@ using CompanyEmployees.ModelBinders;
 using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,25 +18,27 @@ public class CompaniesController : ControllerBase
     private readonly IRepositoryManager _repository;
     private readonly ILogger<CompaniesController> _logger;
     private readonly IMapper _mapper;
+    private readonly IDataShaper<CompanyDto> _dataShaper;
 
-    public CompaniesController(IRepositoryManager repository, ILogger<CompaniesController> logger, IMapper mapper)
+    public CompaniesController(IRepositoryManager repository, ILogger<CompaniesController> logger, IMapper mapper, IDataShaper<CompanyDto> dataShaper)
     {
         _repository = repository;
         _logger = logger;
         _mapper = mapper;
+        _dataShaper = dataShaper;
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllCompanies()
+    public async Task<IActionResult> GetAllCompanies([FromQuery]CompanyParameters companyParameters)
     {
-        var companies = await _repository.Company.GetAllCompanies(trackChanges: false);
+        var companies = await _repository.Company.GetAllCompanies(companyParameters,trackChanges: false);
         /*var companiesDto = companies.Select(c => new CompanyDto()
         {
             Name = c.Name,
             FullAddress = c.Address+" "+c.Country
         });*/
         var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
-        return Ok(companiesDto);
+        return Ok(_dataShaper.ShapeData(companiesDto,companyParameters.Fields));
     }
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpGet("{companyId}", Name = "GetCompanyById")]

@@ -8,8 +8,8 @@ public class CompanyProfile : Profile
 {
     public CompanyProfile()
     {
-        CreateMap<Company, CompanyDto>()
-            .ForMember(c => c.FullAddress, opt => opt.MapFrom(x => x.Address + " " + x.Country));
+        //CreateMap<Company, CompanyDto>().ForMember(c => c.FullAddress, opt => opt.MapFrom(x => x.Address + " " + x.Country));
+        CreateMap<Company, CompanyDto>();
         CreateMap<CompanyForCreationDto, Company>();
         CreateMap<CompanyForUpdateDto, Company>();
         CreateMap<CompanyForUpdateDto, Company>().ReverseMap();

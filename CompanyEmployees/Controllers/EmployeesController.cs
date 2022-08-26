@@ -16,17 +16,21 @@ public class EmployeesController : ControllerBase
     private readonly IRepositoryManager _repository;
     private readonly ILogger<EmployeesController> _logger;
     private readonly IMapper _mapper;
+    private readonly IDataShaper<EmployeeDto> _dataShaper;
 
-    public EmployeesController(IRepositoryManager repository, ILogger<EmployeesController> logger, IMapper mapper)
+    public EmployeesController(IRepositoryManager repository, ILogger<EmployeesController> logger, IMapper mapper,
+        IDataShaper<EmployeeDto> dataShaper)
     {
         _repository = repository;
         _logger = logger;
         _mapper = mapper;
+        _dataShaper = dataShaper;
     }
 
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
-    [HttpGet("paging")]
-    public async Task<IActionResult> GetAllEmployeesByCompanyIdByPaging(Guid companyId,[FromQuery] EmployeeParameters employeeParameters)
+    [HttpGet]
+    public async Task<IActionResult> GetAllEmployeesByCompanyId(Guid companyId,
+        [FromQuery] EmployeeParameters employeeParameters)
     {
         // Added via filter : ValidateCompanyExistsAttribute))]
         /*
@@ -38,28 +42,15 @@ public class EmployeesController : ControllerBase
         }*/
         if (!employeeParameters.ValidAgeRange)
         {
-            return BadRequest("Max age can't be less than min age."); 
+            return BadRequest("Max age can't be less than min age.");
         }
-        var employees = await _repository.Employee.GetAllEmployeesByPaging(companyId, employeeParameters, trackChanges: false);
+
+        var employees =
+            await _repository.Employee.GetAllEmployeesByPaging(companyId, employeeParameters, trackChanges: false);
         var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
-        return Ok(employeesDto);
+        return Ok(_dataShaper.ShapeData(employeesDto, employeeParameters.Fields));
     }
-    [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
-    [HttpGet]
-    public async Task<IActionResult> GetAllEmployeesByCompanyId(Guid companyId)
-    {
-        // Added via filter : ValidateCompanyExistsAttribute))]
-        /*
-        var company = await _repository.Company.GetCompany(companyId, trackChanges: false);
-        if (company == null)
-        {
-            _logger.LogInformation($"Company with id: {companyId} doesn't exist in the database.");
-            return NotFound();
-        }*/
-        var employees = await _repository.Employee.GetAllEmployees(companyId,  trackChanges: false);
-        var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
-        return Ok(employeesDto);
-    }
+
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpGet("{employeeId:guid}", Name = "GetEmployeeById")]
     public async Task<IActionResult> GetEmployeeById(Guid companyId, Guid employeeId)
@@ -113,6 +104,7 @@ public class EmployeesController : ControllerBase
         var employeeToReturn = _mapper.Map<EmployeeDto>(employee);
         return CreatedAtRoute("GetEmployeeById", new { companyId, employeeId = employee.Id }, employeeToReturn);
     }
+
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpDelete("{employeeId}")]
     public async Task<IActionResult> DeleteEmployee(Guid companyId, Guid employeeId)
@@ -136,6 +128,7 @@ public class EmployeesController : ControllerBase
         await _repository.SaveChanges();
         return NoContent();
     }
+
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [ServiceFilter(typeof(ValidationFilterAttribute))]
     [HttpPut("{employeeId}")]
@@ -172,6 +165,7 @@ public class EmployeesController : ControllerBase
         await _repository.SaveChanges();
         return NoContent();
     }
+
     [ServiceFilter(typeof(ValidationFilterAttribute))]
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpPatch("{employeeId}")]

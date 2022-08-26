@@ -3,6 +3,7 @@ using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Formatters;
 using Contracts;
 using Entities;
+using Entities.DataTransferObjects;
 using Entities.Models;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -12,6 +13,7 @@ using NLog;
 using NLog.Web;
 using Npgsql;
 using Repository;
+using Repository.DataShaping;
 
 //====================================================================
 //                              Builder
@@ -34,7 +36,8 @@ builder.Services.AddControllers(config =>
             config.RespectBrowserAcceptHeader = true;
             config.ReturnHttpNotAcceptable = true;
         }
-    ).AddNewtonsoftJson();
+    ).AddNewtonsoftJson()
+    .AddXmlDataContractSerializerFormatters();
     //.AddXmlDataContractSerializerFormatters()
 // Added new OutputFormater wich is csv
 builder.Services.AddMvc(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
@@ -68,6 +71,10 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 // Added support for personalised filter
 builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.AddScoped<ValidateCompanyExistsAttribute>();
+
+// Added support for DataShaper
+builder.Services.AddScoped<IDataShaper<EmployeeDto>,DataShaper<EmployeeDto>>();
+builder.Services.AddScoped<IDataShaper<CompanyDto>,DataShaper<CompanyDto>>();
 //====================================================================
 //                              App
 //====================================================================

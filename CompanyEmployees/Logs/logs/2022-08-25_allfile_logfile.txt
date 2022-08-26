@@ -20117,3 +20117,29 @@ LIMIT @__p_4 OFFSET @__p_3
 2022-08-25 23:51:41.9493|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2022-08-25 23:51:41.9493|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
 2022-08-25 23:51:41.9493|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-25 23:55:01.5647|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-25 23:55:01.5689|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-25 23:55:01.6057|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
+2022-08-25 23:55:04.3444|4|DEBUG|Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler|Initializing Razor view compiler with no compiled views. 
+2022-08-25 23:55:04.4475|12|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2022-08-25 23:55:04.4609|62|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/home/juba/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2022-08-25 23:55:04.4996|1|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2022-08-25 23:55:04.4996|37|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file '/home/juba/.aspnet/DataProtection-Keys/key-324ff622-563d-43ca-86a6-5ce1ff67b55b.xml'. 
+2022-08-25 23:55:04.5071|18|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {324ff622-563d-43ca-86a6-5ce1ff67b55b}. 
+2022-08-25 23:55:04.5147|13|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {324ff622-563d-43ca-86a6-5ce1ff67b55b} with expiration date 2022-11-21 14:28:29Z as default key. 
+2022-08-25 23:55:04.5186|0|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2022-08-25 23:55:04.5211|11|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory|Using managed symmetric algorithm 'System.Security.Cryptography.Aes'. 
+2022-08-25 23:55:04.5211|10|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ManagedAuthenticatedEncryptorFactory|Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'. 
+2022-08-25 23:55:04.5293|2|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {324ff622-563d-43ca-86a6-5ce1ff67b55b} as the default key. 
+2022-08-25 23:55:04.5293|65|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {324ff622-563d-43ca-86a6-5ce1ff67b55b} was loaded during application startup. 
+2022-08-25 23:55:04.6186|0|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 8F4B3009119AEA68F254D999E26ABAD8BA74071B) 
+2022-08-25 23:55:04.7041|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:5001 
+2022-08-25 23:55:04.7267|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5000 
+2022-08-25 23:55:04.7267|13|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly CompanyEmployees 
+2022-08-25 23:55:04.7279|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-08-25 23:55:04.7279|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-08-25 23:55:04.7279|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/ 
+2022-08-25 23:55:04.7279|2|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2022-08-25 23:55:10.9233|0|INFO|Microsoft.Hosting.Lifetime|Application is shutting down... 
+2022-08-25 23:55:10.9285|3|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopping 
+2022-08-25 23:55:11.0034|4|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting stopped 
