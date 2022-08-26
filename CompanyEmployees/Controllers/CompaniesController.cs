@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers;
-
-[Route("api/[controller]")]
+[ApiVersion("1.0")]
+[Route("api/{v:apiversion}/[controller]")]
 [ApiController]
 public class CompaniesController : ControllerBase
 {
@@ -30,7 +30,14 @@ public class CompaniesController : ControllerBase
         _dataJoinShaper = dataJoinShaper;
     }
 
-    [HttpGet]
+    [HttpOptions]
+    public IActionResult GetCompaniesReadOptions()
+    {
+        Response.Headers.Add("Allow", "GET, OPTIONS, POST");
+        return Ok();
+
+    }
+    [HttpGet(Name = "GetAllCompanies")]
     public async Task<IActionResult> GetAllCompanies([FromQuery]CompanyParameters companyParameters)
     {
         var companies = await _repository.Company.GetAllCompanies(companyParameters,trackChanges: false);
@@ -65,7 +72,7 @@ public class CompaniesController : ControllerBase
     }
 
     [ServiceFilter(typeof(ValidationFilterAttribute))]
-    [HttpPost]
+    [HttpPost(Name = "CreateCompany")]
     public async Task<IActionResult> CreateCompany([FromBody] CompanyForCreationDto companyForCreationDto)
     {
         // Added via filter : ValidationFilterAttribute

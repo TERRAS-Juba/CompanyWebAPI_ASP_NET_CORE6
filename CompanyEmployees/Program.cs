@@ -76,6 +76,15 @@ builder.Services.AddScoped<ValidateCompanyExistsAttribute>();
 builder.Services.AddScoped<IDataShaper<EmployeeDto>,DataShaper<EmployeeDto>>();
 builder.Services.AddScoped<IDataShaper<CompanyDto>,DataShaper<CompanyDto>>();
 builder.Services.AddScoped<IDataShaper<CompanyJoinEmployeeDto>,DataShaper<CompanyJoinEmployeeDto>>();
+
+// Added support for API versioning
+builder.Services.AddApiVersioning(opt =>
+    {
+        opt.ReportApiVersions = true;
+        opt.AssumeDefaultVersionWhenUnspecified = true;
+        opt.DefaultApiVersion = new ApiVersion(1, 0);
+    }
+);
 //====================================================================
 //                              App
 //====================================================================

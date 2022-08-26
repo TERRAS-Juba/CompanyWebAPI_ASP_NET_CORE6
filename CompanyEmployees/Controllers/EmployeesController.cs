@@ -26,7 +26,6 @@ public class EmployeesController : ControllerBase
         _mapper = mapper;
         _dataShaper = dataShaper;
     }
-
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpGet]
     public async Task<IActionResult> GetAllEmployeesByCompanyId(Guid companyId,
