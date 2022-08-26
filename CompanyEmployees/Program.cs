@@ -75,6 +75,7 @@ builder.Services.AddScoped<ValidateCompanyExistsAttribute>();
 // Added support for DataShaper
 builder.Services.AddScoped<IDataShaper<EmployeeDto>,DataShaper<EmployeeDto>>();
 builder.Services.AddScoped<IDataShaper<CompanyDto>,DataShaper<CompanyDto>>();
+builder.Services.AddScoped<IDataShaper<CompanyJoinEmployeeDto>,DataShaper<CompanyJoinEmployeeDto>>();
 //====================================================================
 //                              App
 //====================================================================

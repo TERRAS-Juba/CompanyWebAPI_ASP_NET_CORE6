@@ -19,13 +19,15 @@ public class CompaniesController : ControllerBase
     private readonly ILogger<CompaniesController> _logger;
     private readonly IMapper _mapper;
     private readonly IDataShaper<CompanyDto> _dataShaper;
+    private readonly IDataShaper<CompanyJoinEmployeeDto> _dataJoinShaper;
 
-    public CompaniesController(IRepositoryManager repository, ILogger<CompaniesController> logger, IMapper mapper, IDataShaper<CompanyDto> dataShaper)
+    public CompaniesController(IRepositoryManager repository, ILogger<CompaniesController> logger, IMapper mapper, IDataShaper<CompanyDto> dataShaper, IDataShaper<CompanyJoinEmployeeDto> dataJoinShaper)
     {
         _repository = repository;
         _logger = logger;
         _mapper = mapper;
         _dataShaper = dataShaper;
+        _dataJoinShaper = dataJoinShaper;
     }
 
     [HttpGet]
@@ -39,6 +41,12 @@ public class CompaniesController : ControllerBase
         });*/
         var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
         return Ok(_dataShaper.ShapeData(companiesDto,companyParameters.Fields));
+    }
+    [HttpGet("employees")]
+    public async Task<IActionResult> GetCompaniesWithEmployees([FromQuery]CompanyParameters companyParameters)
+    {
+        var companies = await _repository.Company.GetCompaniesWithEmployees();
+        return Ok(_dataJoinShaper.ShapeData(companies,companyParameters.Fields));
     }
     [ServiceFilter(typeof(ValidateCompanyExistsAttribute))]
     [HttpGet("{companyId}", Name = "GetCompanyById")]
