@@ -1,4 +1,5 @@
 using System.Net;
+using AspNetCoreRateLimit;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Formatters;
 using CompanyEmployees.ServicesConfigurations;
@@ -31,6 +32,13 @@ builder.ConfigurePostgresDatabaseConnection("PostgreSqlConnection","CompanyEmplo
 // Added support for caching
 builder.Services.ConfigureResponseCaching();
 
+// Added memory cache for rate limiting and throttling
+builder.Services.AddMemoryCache();
+builder.Services.AddInMemoryRateLimiting();
+// Add configuration for rateLimitation
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();
+
 // Added support for Marvin cache library
 builder.Services.ConfigureHttpCacheHeaders();
 
@@ -38,7 +46,7 @@ builder.Services.ConfigureHttpCacheHeaders();
 builder.Services.ConfigureControllersBehaviour();
 
 // Add custom Output Formaters
-builder.Services.ConfigureCustomeOutputFormaters();
+builder.Services.ConfigureCustomOutputFormaters();
 
 // NLog: Setup NLog for Dependency injection
 builder.ConfigureLogging();
@@ -114,6 +122,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 app.UseResponseCaching();
 
 app.UseHttpCacheHeaders();
+
+app.UseIpRateLimiting();
 
 app.UseRouting();
 

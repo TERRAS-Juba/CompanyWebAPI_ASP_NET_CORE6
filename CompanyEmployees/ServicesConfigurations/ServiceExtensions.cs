@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Formatters;
 using Contracts;
@@ -89,7 +90,7 @@ public static class ServiceExtensions
             .AddNewtonsoftJson();
     }
 
-    public static void ConfigureCustomeOutputFormaters(this IServiceCollection services)
+    public static void ConfigureCustomOutputFormaters(this IServiceCollection services)
     {
         services.AddMvc(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
     }
@@ -107,6 +108,26 @@ public static class ServiceExtensions
                 expirationOpt.CacheLocation = CacheLocation.Public;
             },
             (validationOpt) => { validationOpt.MustRevalidate = true; });
-        services.AddHttpContextAccessor();
+    }
+
+    public static void ConfigureRateLimitingOptions(this IServiceCollection services)
+    {
+        var rateLimitRules = new List<RateLimitRule>()
+        {
+            new()
+            {
+                Endpoint = "*",
+                Limit = 3,
+                Period = "5m"
+            }
+        };
+        services.Configure<IpRateLimitOptions>(opt =>
+        {
+            opt.GeneralRules = rateLimitRules;
+        });
+        services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+        services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+        services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+
     }
 }
