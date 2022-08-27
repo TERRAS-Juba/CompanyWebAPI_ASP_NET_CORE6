@@ -1,6 +1,7 @@
 using System.Net;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Formatters;
+using CompanyEmployees.ServicesConfigurations;
 using Contracts;
 using Entities;
 using Entities.DataTransferObjects;
@@ -25,66 +26,44 @@ var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurre
 var builder = WebApplication.CreateBuilder(args);
 
 // Posgtres Database connection
-var connectionBuilder = new NpgsqlConnectionStringBuilder();
-connectionBuilder.ConnectionString = builder.Configuration.GetConnectionString("PostgreSqlConnection");
-builder.Services.AddDbContext<RepositoryContext>(o =>
-    o.UseNpgsql(connectionBuilder.ConnectionString, b => b.MigrationsAssembly("CompanyEmployees")));
+builder.ConfigurePostgresDatabaseConnection("PostgreSqlConnection","CompanyEmployees");
+
+// Added support for caching
+builder.Services.ConfigureResponseCaching();
+
+// Added support for Marvin cache library
+builder.Services.ConfigureHttpCacheHeaders();
 
 // Add services to the container.
-builder.Services.AddControllers(config =>
-        {
-            config.RespectBrowserAcceptHeader = true;
-            config.ReturnHttpNotAcceptable = true;
-        }
-    ).AddNewtonsoftJson()
-    .AddXmlDataContractSerializerFormatters();
-    //.AddXmlDataContractSerializerFormatters()
-// Added new OutputFormater wich is csv
-builder.Services.AddMvc(config => config.OutputFormatters.Add(new CsvOutputFormatter()));
+builder.Services.ConfigureControllersBehaviour();
 
-// DI AutoMapper
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-// DI IRepositoryManager => RepositoryManager
-builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
+// Add custom Output Formaters
+builder.Services.ConfigureCustomeOutputFormaters();
 
 // NLog: Setup NLog for Dependency injection
-builder.Logging.ClearProviders();
-builder.Host.UseNLog();
+builder.ConfigureLogging();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Cors
-builder.Services.AddCors(options =>
-    options.AddPolicy("CorsPolicy", build => build.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
- 
-// Replace error 400 to 422 when validation rules of incoming dto is not valide
-// 400 => Bad request
-// 422 => Unprocessable Entity
-builder.Services.Configure<ApiBehaviorOptions>(options =>
-{
-    options.SuppressModelStateInvalidFilter = true;
-});
+builder.Services.ConfigureCorsPolicy();
 
-// Added support for personalised filter
-builder.Services.AddScoped<ValidationFilterAttribute>();
-builder.Services.AddScoped<ValidateCompanyExistsAttribute>();
-
-// Added support for DataShaper
-builder.Services.AddScoped<IDataShaper<EmployeeDto>,DataShaper<EmployeeDto>>();
-builder.Services.AddScoped<IDataShaper<CompanyDto>,DataShaper<CompanyDto>>();
-builder.Services.AddScoped<IDataShaper<CompanyJoinEmployeeDto>,DataShaper<CompanyJoinEmployeeDto>>();
+// Added support for custome filters
+builder.Services.ConfigureFilters();
 
 // Added support for API versioning
-builder.Services.AddApiVersioning(opt =>
-    {
-        opt.ReportApiVersions = true;
-        opt.AssumeDefaultVersionWhenUnspecified = true;
-        opt.DefaultApiVersion = new ApiVersion(1, 0);
-    }
-);
+builder.Services.ConfigureAPIVersionning();
+
+// Added support for DataShaper
+builder.Services.ConfigureDIForDataShaper();
+
+// DI AutoMapper
+builder.Services.ConfigureDIForAutoMapper();
+
+// DI IRepositoryManager => RepositoryManager
+builder.Services.ConfigureDIForRepositoryBase();
 //====================================================================
 //                              App
 //====================================================================
@@ -131,6 +110,10 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 {
     ForwardedHeaders = ForwardedHeaders.All
 });
+
+app.UseResponseCaching();
+
+app.UseHttpCacheHeaders();
 
 app.UseRouting();
 
