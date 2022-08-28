@@ -1,7 +1,5 @@
-using System.Diagnostics.SymbolStore;
 using AutoMapper;
 using CompanyEmployees.ActionFilters;
-using CompanyEmployees.ModelBinders;
 using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
@@ -10,11 +8,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CompanyEmployees.Controllers;
+namespace CompanyEmployees.Controllers.V1;
 [ApiVersion("1.0")]
-[Route("api/{v:apiversion}/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 [ApiController]
 [Authorize(Roles = "Administrator")]
+[ApiExplorerSettings(GroupName = "v1")]
 public class CompaniesController : ControllerBase
 {
     private readonly IRepositoryManager _repository;
@@ -39,7 +38,16 @@ public class CompaniesController : ControllerBase
         return Ok();
 
     }
+    /// <summary>
+    /// Retrieve the list of all companies
+    /// </summary>
+    /// <response code="200">Returns the list of companies (the list can be empty)</response>
+    /// <response code="403">Returns when the logged user dont have acces to this endpoint</response
+    /// <response code="401">Returns when the the request dont have a valid token</response
     [HttpGet(Name = "GetAllCompanies")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(401)]
+    [ProducesResponseType(403)]
     public async Task<IActionResult> GetAllCompanies([FromQuery]CompanyParameters companyParameters)
     {
         var companies = await _repository.Company.GetAllCompanies(companyParameters,trackChanges: false);

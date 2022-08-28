@@ -44,8 +44,8 @@ builder.Services.ConfigureCustomOutputFormaters();
 builder.ConfigureLogging();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.ConfigureSwagger();
 
 // Cors
 builder.Services.ConfigureCorsPolicy();
@@ -72,6 +72,7 @@ builder.Services.ConfigureIdentity();
 // Add support to JWT Authentification
 builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.AddScoped<IAuthenticationManager,AuthenticationManager>();
+
 //====================================================================
 //                              App
 //====================================================================
@@ -81,7 +82,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(opt =>
+    {
+        opt.SwaggerEndpoint("/swagger/v1/swagger.json", "My company API v1");
+        opt.SwaggerEndpoint("/swagger/v2/swagger.json", "My company API v2");
+
+    });
     app.UseDeveloperExceptionPage();
 }
 else

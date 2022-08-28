@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CompanyEmployees.Controllers;
+namespace CompanyEmployees.Controllers.V1;
 
 [ApiController]
 [ApiVersion("1.0")]
-[Route("api/{v:apiversion}/companies/{companyId}/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 [Authorize(Roles = "Administrator,Manager")]
 public class EmployeesController : ControllerBase
 {

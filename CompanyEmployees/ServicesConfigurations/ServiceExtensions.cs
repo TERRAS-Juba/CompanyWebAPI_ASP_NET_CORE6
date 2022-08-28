@@ -1,3 +1,4 @@
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Unicode;
@@ -18,6 +19,7 @@ using Repository;
 using Repository.DataShaping;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace CompanyEmployees.ServicesConfigurations;
 
@@ -171,6 +173,74 @@ public static class ServiceExtensions
                 ValidAudience = jwtSettings.GetSection("validAudience").Value,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
             };
+        });
+    }
+
+    public static void ConfigureSwagger(this IServiceCollection services)
+    {
+        services.AddEndpointsApiExplorer();
+        services.AddSwaggerGen(opt =>
+        {
+            opt.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Version = "v1",
+                Title = "My Company API",
+                Description = "An ASP.NET Core Web API for managing Companies with their employees",
+                TermsOfService = new Uri("https://example.com/terms"),
+                Contact = new OpenApiContact
+                {
+                    Name = "Example Contact",
+                    Url = new Uri("https://example.com/contact")
+                },
+                License = new OpenApiLicense
+                {
+                    Name = "Example License",
+                    Url = new Uri("https://example.com/license")
+                }
+            });
+            opt.SwaggerDoc("v2", new OpenApiInfo
+            {
+                Version = "v2",
+                Title = "My Company API",
+                Description = "An ASP.NET Core Web API for managing Companies with their employees version 2",
+                TermsOfService = new Uri("https://example.com/terms"),
+                Contact = new OpenApiContact
+                {
+                    Name = "TERRAS Juba",
+                    Email = "jubaterras600@gmail.com",
+                    Url = new Uri("https://example.com/contact")
+                },
+                License = new OpenApiLicense
+                {
+                    Name = "Example License",
+                    Url = new Uri("https://example.com/license")
+                }
+            });
+            var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            opt.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+            opt.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                In = ParameterLocation.Header,
+                Description = "Place to add JWT with Bearer",
+                Name = "Authorization",
+                Type = SecuritySchemeType.ApiKey,
+                Scheme = "Bearer"
+            });
+            opt.AddSecurityRequirement(new OpenApiSecurityRequirement()
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        },
+                        Name = "Bearer",
+                    },
+                    new List<string>()
+                }
+            });
         });
     }
 }
