@@ -14,6 +14,7 @@ namespace CompanyEmployees.Controllers;
 [ApiVersion("1.0")]
 [Route("api/{v:apiversion}/[controller]")]
 [ApiController]
+[Authorize(Roles = "Administrator")]
 public class CompaniesController : ControllerBase
 {
     private readonly IRepositoryManager _repository;
@@ -38,7 +39,7 @@ public class CompaniesController : ControllerBase
         return Ok();
 
     }
-    [HttpGet(Name = "GetAllCompanies"),Authorize]
+    [HttpGet(Name = "GetAllCompanies")]
     public async Task<IActionResult> GetAllCompanies([FromQuery]CompanyParameters companyParameters)
     {
         var companies = await _repository.Company.GetAllCompanies(companyParameters,trackChanges: false);

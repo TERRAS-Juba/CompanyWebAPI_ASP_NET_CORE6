@@ -4,13 +4,16 @@ using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
 using Entities.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers;
 
 [ApiController]
-[Route("api/companies/{companyId}/[controller]")]
+[ApiVersion("1.0")]
+[Route("api/{v:apiversion}/companies/{companyId}/[controller]")]
+[Authorize(Roles = "Administrator,Manager")]
 public class EmployeesController : ControllerBase
 {
     private readonly IRepositoryManager _repository;
