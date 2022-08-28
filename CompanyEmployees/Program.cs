@@ -1,11 +1,13 @@
 using System.Net;
 using AspNetCoreRateLimit;
 using CompanyEmployees.ServicesConfigurations;
+using Contracts;
 using Entities.Models;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
 using NLog.Web;
+using AuthenticationManager = Repository.AuthenticationManager;
 
 //====================================================================
 //                              Builder
@@ -69,6 +71,7 @@ builder.Services.ConfigureIdentity();
 
 // Add support to JWT Authentification
 builder.Services.ConfigureJWT(builder.Configuration);
+builder.Services.AddScoped<IAuthenticationManager,AuthenticationManager>();
 //====================================================================
 //                              App
 //====================================================================
