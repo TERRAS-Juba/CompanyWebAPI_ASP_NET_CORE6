@@ -6,6 +6,7 @@ using Contracts;
 using Entities.DataTransferObjects;
 using Entities.Models;
 using Entities.RequestFeatures;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
@@ -37,7 +38,7 @@ public class CompaniesController : ControllerBase
         return Ok();
 
     }
-    [HttpGet(Name = "GetAllCompanies")]
+    [HttpGet(Name = "GetAllCompanies"),Authorize]
     public async Task<IActionResult> GetAllCompanies([FromQuery]CompanyParameters companyParameters)
     {
         var companies = await _repository.Company.GetAllCompanies(companyParameters,trackChanges: false);

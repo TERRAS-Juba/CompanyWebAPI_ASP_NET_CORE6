@@ -9,6 +9,8 @@
     <ItemGroup>
         <PackageReference Include="AspNetCoreRateLimit" Version="4.0.2" />
         <PackageReference Include="Marvin.Cache.Headers" Version="6.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.8" />
         <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="7.0.0-preview.7.22376.6" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.8" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />

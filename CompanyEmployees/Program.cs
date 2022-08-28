@@ -1,21 +1,11 @@
 using System.Net;
 using AspNetCoreRateLimit;
-using CompanyEmployees.ActionFilters;
-using CompanyEmployees.Formatters;
 using CompanyEmployees.ServicesConfigurations;
-using Contracts;
-using Entities;
-using Entities.DataTransferObjects;
 using Entities.Models;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
-using Npgsql;
-using Repository;
-using Repository.DataShaping;
 
 //====================================================================
 //                              Builder
@@ -72,6 +62,13 @@ builder.Services.ConfigureDIForAutoMapper();
 
 // DI IRepositoryManager => RepositoryManager
 builder.Services.ConfigureDIForRepositoryBase();
+
+// Add support for asp .net core Identity
+builder.Services.AddAuthentication();
+builder.Services.ConfigureIdentity();
+
+// Add support to JWT Authentification
+builder.Services.ConfigureJWT(builder.Configuration);
 //====================================================================
 //                              App
 //====================================================================
@@ -126,6 +123,8 @@ app.UseHttpCacheHeaders();
 app.UseIpRateLimiting();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

@@ -1651,3 +1651,213 @@
 2022-08-27 14:19:04.3879|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: Strong, "6F7FEE4FB3C0A200C9D269DBB14DAE0E". Last-Modified: Sat, 27 Aug 2022 12:19:04 GMT |url: https://localhost/api/1.0/Companies|action: GetAllCompanies|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateValidationHeadersOnResponse
 2022-08-27 14:19:04.3930|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header. |url: https://localhost/api/1.0/Companies|action: GetAllCompanies|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
 2022-08-27 14:19:04.3930|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding. |url: https://localhost/api/1.0/Companies|action: GetAllCompanies|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:30:27.6603|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:30:27.7198|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - no If-None-Match or If-Modified-Since headers. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:30:27.7198|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GetOrHeadIndicatesResourceStillValid
+2022-08-27 21:30:27.7323|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:30:27.7323|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:30:27.7656|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.PutOrPostIndicatesResourceHasChanged
+2022-08-27 21:30:28.1848|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:30:28.1936|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Sat, 27 Aug 2022 19:30:48 GMT. Cache-Control: public,max-age=20,must-revalidate. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:30:28.2031|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not generating Validation headers as the response status code does not indicate success. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateValidationHeadersOnResponse
+2022-08-27 21:30:28.2060|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:30:28.2060|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding. |url: https://localhost/favicon.ico|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:33:09.9558|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:33:09.9727|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:33:09.9727|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GetOrHeadIndicatesResourceStillValid
+2022-08-27 21:33:09.9796|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:33:09.9796|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:33:09.9796|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.PutOrPostIndicatesResourceHasChanged
+2022-08-27 21:33:11.0154|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User password validation failed: PasswordTooShort. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Microsoft.AspNetCore.Identity.UserManager`1.ValidatePasswordAsync
+2022-08-27 21:33:11.0473|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:33:11.0473|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Sat, 27 Aug 2022 19:33:31 GMT. Cache-Control: public,max-age=20,must-revalidate. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:33:11.0515|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not generating Validation headers as the response status code does not indicate success. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateValidationHeadersOnResponse
+2022-08-27 21:33:11.0515|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:33:11.0515|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:33:38.7036|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:33:38.7036|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:33:38.7036|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GetOrHeadIndicatesResourceStillValid
+2022-08-27 21:33:38.7061|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:33:38.7061|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:33:38.7061|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.PutOrPostIndicatesResourceHasChanged
+2022-08-27 21:33:42.7911|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (35ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Sex", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17); |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-08-27 21:33:42.8364|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'Entities.RepositoryContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 22021: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERREUR
+    SqlState: 22021
+    MessageText: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+    File: wchar.c
+    Line: 2017
+    Routine: report_invalid_encoding
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 22021: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERREUR
+    SqlState: 22021
+    MessageText: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+    File: wchar.c
+    Line: 2017
+    Routine: report_invalid_encoding
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)|url: https://localhost/api/1.0/Authentication|action: RegisterUser|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`3.Log
+2022-08-27 21:33:42.9578|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 22021: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERREUR
+    SqlState: 22021
+    MessageText: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+    File: wchar.c
+    Line: 2017
+    Routine: report_invalid_encoding
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at CompanyEmployees.Controllers.AuthenticationController.RegisterUser(UserForCreationDto userForCreationDto) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/AuthenticationController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/1.0/Authentication|action: RegisterUser|Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+2022-08-27 21:33:42.9908|0|ERROR|Program|Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 22021: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|223_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERREUR
+    SqlState: 22021
+    MessageText: séquence d'octets invalide pour l'encodage « UTF8 » : 0x00
+    File: wchar.c
+    Line: 2017
+    Routine: report_invalid_encoding
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at CompanyEmployees.Controllers.AuthenticationController.RegisterUser(UserForCreationDto userForCreationDto) in /home/juba/Desktop/C#/CompanyEmployees/CompanyEmployees/Controllers/AuthenticationController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AspNetCoreRateLimit.RateLimitMiddleware`1.Invoke(HttpContext context) in C:\Users\User\Documents\Github\AspNetCoreRateLimit\src\AspNetCoreRateLimit\Middleware\RateLimitMiddleware.cs:line 124
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task) |url: https://localhost/api/1.0/Authentication|action: |Program.<Main
+2022-08-27 21:36:35.3920|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:36:35.4053|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:36:35.4053|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GetOrHeadIndicatesResourceStillValid
+2022-08-27 21:36:35.4083|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:36:35.4083|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:36:35.4083|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.PutOrPostIndicatesResourceHasChanged
+2022-08-27 21:36:40.7583|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:36:40.7640|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Sat, 27 Aug 2022 19:37:00 GMT. Cache-Control: public,max-age=20,must-revalidate. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:36:40.7694|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Validation headers. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateValidationHeadersOnResponse
+2022-08-27 21:36:40.8064|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Validation headers generated. ETag: Strong, "292BB3BCAFB6160E33E54E8DAFED46C3". Last-Modified: Sat, 27 Aug 2022 19:36:40 GMT |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateValidationHeadersOnResponse
+2022-08-27 21:36:40.8064|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:36:40.8101|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:38:48.6419|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional GET/HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:38:48.6419|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't GET or HEAD. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalGetOrHeadIsValid
+2022-08-27 21:38:48.6419|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 304 - Not Modified.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GetOrHeadIndicatesResourceStillValid
+2022-08-27 21:38:48.6419|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Checking for conditional PUT/PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:38:48.6419|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not valid - method isn't PUT or PATCH. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.ConditionalPutOrPatchIsValid
+2022-08-27 21:38:48.6459|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Don't generate 412 - Precondition Failed.  Continue. |url: https://localhost/api/1.0/Authentication|action: |Marvin.Cache.Headers.HttpCacheHeadersMiddleware.PutOrPostIndicatesResourceHasChanged
+2022-08-27 21:38:48.7829|13|WARN|Microsoft.AspNetCore.Identity.UserManager|User validation failed: DuplicateUserName;DuplicateEmail. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync
+2022-08-27 21:38:48.8161|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating expiration headers. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:38:48.8161|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Expiration headers generated. Expires: Sat, 27 Aug 2022 19:39:08 GMT. Cache-Control: public,max-age=20,must-revalidate. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateExpirationHeadersOnResponse
+2022-08-27 21:38:48.8195|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Not generating Validation headers as the response status code does not indicate success. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateValidationHeadersOnResponse
+2022-08-27 21:38:48.8195|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Generating Vary header. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
+2022-08-27 21:38:48.8227|0|INFO|Marvin.Cache.Headers.HttpCacheHeadersMiddleware|Vary header generated: Accept, Accept-Language, Accept-Encoding. |url: https://localhost/api/1.0/Authentication|action: RegisterUser|Marvin.Cache.Headers.HttpCacheHeadersMiddleware.GenerateVaryHeadersOnResponse
