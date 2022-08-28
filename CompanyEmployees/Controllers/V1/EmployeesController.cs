@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CompanyEmployees.Controllers.V1;
 
 [ApiController]
-[ApiVersion("1.0")]
+[ApiVersion("1")]
 [Route("api/v{version:apiVersion}/[controller]")]
 [Authorize(Roles = "Administrator,Manager")]
 public class EmployeesController : ControllerBase

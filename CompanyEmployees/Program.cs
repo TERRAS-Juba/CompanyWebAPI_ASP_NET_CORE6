@@ -19,7 +19,8 @@ var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurre
 var builder = WebApplication.CreateBuilder(args);
 
 // Posgtres Database connection
-builder.ConfigurePostgresDatabaseConnection("PostgreSqlConnection","CompanyEmployees");
+var connectionString=Environment.GetEnvironmentVariable("POSTGRESQLCONNECTION");
+builder.ConfigurePostgresDatabaseConnection(connectionString,"CompanyEmployees");
 
 // Added support for caching
 builder.Services.ConfigureResponseCaching();

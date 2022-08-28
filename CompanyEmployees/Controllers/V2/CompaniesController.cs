@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers.V2;
-[ApiVersion("2.0")]
+[ApiVersion("2")]
 [Route("api/v{version:apiVersion}/[controller]")]
 [ApiController]
 [Authorize(Roles = "Administrator")]

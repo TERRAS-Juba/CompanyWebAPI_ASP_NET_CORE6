@@ -16,14 +16,15 @@
       "launchUrl": "swagger",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "JWT_SECRET_KEY": "kFjKFeZqb0snSNqVN5nAy6Sk8owivKVPAxF5TjLSOLhOO3lYOZbqofoKsAgKm3LgWoBSsf2anvI4el1MsKuL22XbtMiArlmih4DkwFrFraqeFuYe8KLGcRxjWVLh35U5j0gNZH9r07LAaZXnsDzJp6w4LCzc8l1gNhIueYpSfMG2188VoE21gq0OI7EnLJifOSVM1I2lNFtXjcSgZqqiuwhDnEdyQUB9aPoJIQrekA2JnSu9ZxAV1Ek7czOlVReB"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "IIS Express": {
-      "commandName": "IISExpress",
+      "commandName": "Project",
+      "dotnetRunMessages": true,
       "launchBrowser": false,
       "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

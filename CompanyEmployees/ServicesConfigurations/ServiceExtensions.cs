@@ -1,7 +1,5 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Text;
-using System.Text.Unicode;
 using AspNetCoreRateLimit;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Formatters;
@@ -39,7 +37,7 @@ public static class ServiceExtensions
         string migrationAssembly)
     {
         var connectionBuilder = new NpgsqlConnectionStringBuilder();
-        connectionBuilder.ConnectionString = builder.Configuration.GetConnectionString(connectionString);
+        connectionBuilder.ConnectionString = connectionString;
         builder.Services.AddDbContext<RepositoryContext>(o =>
             o.UseNpgsql(connectionBuilder.ConnectionString, b => b.MigrationsAssembly(migrationAssembly)));
     }

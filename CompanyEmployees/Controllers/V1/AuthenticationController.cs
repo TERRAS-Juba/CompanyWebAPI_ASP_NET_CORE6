@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers.V1;
-[ApiVersion("1.0")]
+[ApiVersion("1")]
 [Route("api/v{version:apiVersion}/[controller]")]
 [ApiController]
 public class AuthenticationController : ControllerBase
@@ -58,7 +58,7 @@ public class AuthenticationController : ControllerBase
         if (!await _authenticationManager.ValidateUser(userForAuthentificationDto))
         {
             _logger.LogWarning($"{nameof(Authenticate)}: Authentication failed. Wrong email or password.");
-            return Unauthorized();
+            return Unauthorized($"{nameof(Authenticate)}: Authentication failed. Wrong email or password.");
         }
 
         return Ok(new { Token = await _authenticationManager.CreateToken() });
